@@ -33,6 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Export, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,8 +75,93 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QLDanhGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLDanhGia.Designer.cs">
+      <DependentUpon>frm_QLDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLDichVu.Designer.cs">
+      <DependentUpon>frm_QLDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLHD.Designer.cs">
+      <DependentUpon>frm_QLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLKH.Designer.cs">
+      <DependentUpon>frm_QLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLKM.Designer.cs">
+      <DependentUpon>frm_QLKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLThongKe.Designer.cs">
+      <DependentUpon>frm_QLThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Trangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Trangchu.Designer.cs">
+      <DependentUpon>frm_Trangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNV.Designer.cs">
+      <DependentUpon>frm_QLNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLDanhGia.resx">
+      <DependentUpon>frm_QLDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLDichVu.resx">
+      <DependentUpon>frm_QLDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLHD.resx">
+      <DependentUpon>frm_QLHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLKH.resx">
+      <DependentUpon>frm_QLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLKM.resx">
+      <DependentUpon>frm_QLKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLNV.resx">
+      <DependentUpon>frm_QLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLThongKe.resx">
+      <DependentUpon>frm_QLThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Trangchu.resx">
+      <DependentUpon>frm_Trangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +170,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +184,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\about-1.jpg" />
+    <Content Include="Resources\about-2.jpg" />
+    <Content Include="Resources\about-3.jpg" />
+    <Content Include="Resources\about-4.jpg" />
+    <Content Include="Resources\carousel-1.jpg" />
+    <Content Include="Resources\carousel-2.jpg" />
+    <Content Include="Resources\logo.jpg" />
+    <Content Include="Resources\room-1.jpg" />
+    <Content Include="Resources\room-2.jpg" />
+    <Content Include="Resources\room-3.jpg" />
+    <None Include="Resources\search.png" />
+    <Content Include="Resources\team-1.jpg" />
+    <Content Include="Resources\team-2.jpg" />
+    <Content Include="Resources\team-3.jpg" />
+    <Content Include="Resources\team-4.jpg" />
+    <Content Include="Resources\testimonial-1.jpg" />
+    <Content Include="Resources\testimonial-2.jpg" />
+    <Content Include="Resources\testimonial-3.jpg" />
+    <Content Include="Resources\testimonial-4.jpg" />
+    <Content Include="Resources\video.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
