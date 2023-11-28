@@ -39,6 +39,7 @@
     <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Pdf.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.PivotGrid.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -52,10 +53,12 @@
     <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGauges.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v22.2" />
     <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v22.2.Extensions, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -105,6 +108,18 @@
     <Compile Include="frm_QLKM.Designer.cs">
       <DependentUpon>frm_QLKM.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QLNVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLNVien.Designer.cs">
+      <DependentUpon>frm_QLNVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLPHONG.Designer.cs">
+      <DependentUpon>frm_QLPHONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QLThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,12 +137,6 @@
     </Compile>
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_QLNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_QLNV.Designer.cs">
-      <DependentUpon>frm_QLNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,8 +161,11 @@
     <EmbeddedResource Include="frm_QLKM.resx">
       <DependentUpon>frm_QLKM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_QLNV.resx">
-      <DependentUpon>frm_QLNV.cs</DependentUpon>
+    <EmbeddedResource Include="frm_QLNVien.resx">
+      <DependentUpon>frm_QLNVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QLPHONG.resx">
+      <DependentUpon>frm_QLPHONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QLThongKe.resx">
       <DependentUpon>frm_QLThongKe.cs</DependentUpon>

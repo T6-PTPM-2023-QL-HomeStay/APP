@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QLHomeStay_App
 {
-    public partial class frm_QLNV : DevExpress.XtraEditors.XtraForm
+    public partial class frm_QLNVien : DevExpress.XtraEditors.XtraForm
     {
-        public frm_QLNV()
+        public frm_QLNVien()
         {
             InitializeComponent();
         }

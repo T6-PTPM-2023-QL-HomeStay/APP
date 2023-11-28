@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace QLHomeStay_App
 {
-    public partial class frm_QLThongKe : DevExpress.XtraEditors.XtraForm
+    public partial class frm_QLPHONG : DevExpress.XtraEditors.XtraForm
     {
-        public frm_QLThongKe()
+        public frm_QLPHONG()
         {
             InitializeComponent();
         }

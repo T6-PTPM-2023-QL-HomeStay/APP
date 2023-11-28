@@ -11,7 +11,6 @@ C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Deb
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.exe
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.pdb
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_Login.resources
-C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLNV.resources
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_Trangchu.resources
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLKH.resources
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLHD.resources
@@ -19,3 +18,5 @@ C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Deb
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLThongKe.resources
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLDanhGia.resources
 C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLKM.resources
+C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLPHONG.resources
+C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLNVien.resources
