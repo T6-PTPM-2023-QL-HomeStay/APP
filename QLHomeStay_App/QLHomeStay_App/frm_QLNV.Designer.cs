@@ -77,6 +77,8 @@
             this.tabPage1item = new DevExpress.XtraLayout.LayoutControlGroup();
             this.panel2item = new DevExpress.XtraLayout.LayoutControlItem();
             this.toolStrip1item = new DevExpress.XtraLayout.LayoutControlItem();
+            this.qL_HOMESTAYDataSet = new QLHomeStay_App.QL_HOMESTAYDataSet();
+            this.qLHOMESTAYDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -92,6 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPage1item)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel2item)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolStrip1item)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_HOMESTAYDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHOMESTAYDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // errorProvider1
@@ -196,6 +200,7 @@
             // 
             this.dtgvTTKH_Show.AllowUserToAddRows = false;
             this.dtgvTTKH_Show.AllowUserToDeleteRows = false;
+            this.dtgvTTKH_Show.AutoGenerateColumns = false;
             this.dtgvTTKH_Show.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -215,6 +220,7 @@
             this.Column4,
             this.Column7,
             this.Column8});
+            this.dtgvTTKH_Show.DataSource = this.qLHOMESTAYDataSetBindingSource;
             this.dtgvTTKH_Show.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvTTKH_Show.Location = new System.Drawing.Point(4, 20);
             this.dtgvTTKH_Show.Margin = new System.Windows.Forms.Padding(4);
@@ -331,7 +337,7 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(24, 33);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 16);
+            this.label17.Size = new System.Drawing.Size(74, 17);
             this.label17.TabIndex = 5;
             this.label17.Text = "Nhân viên:";
             // 
@@ -422,7 +428,7 @@
             this.label7.Location = new System.Drawing.Point(13, 352);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 16);
+            this.label7.Size = new System.Drawing.Size(66, 17);
             this.label7.TabIndex = 5;
             this.label7.Text = "Chức vụ:";
             // 
@@ -432,7 +438,7 @@
             this.label2.Location = new System.Drawing.Point(13, 301);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.Size = new System.Drawing.Size(50, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "CCCD:";
             // 
@@ -442,7 +448,7 @@
             this.label6.Location = new System.Drawing.Point(13, 253);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 16);
+            this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 5;
             this.label6.Text = "Số điện thoại:";
             // 
@@ -452,7 +458,7 @@
             this.label1.Location = new System.Drawing.Point(12, 152);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ngày sinh:";
             // 
@@ -462,7 +468,7 @@
             this.label5.Location = new System.Drawing.Point(12, 204);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.Size = new System.Drawing.Size(73, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Quê quán:";
             // 
@@ -472,7 +478,7 @@
             this.label4.Location = new System.Drawing.Point(12, 91);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 16);
+            this.label4.Size = new System.Drawing.Size(100, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tên nhân viên:";
             // 
@@ -482,7 +488,7 @@
             this.label3.Location = new System.Drawing.Point(12, 42);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 16);
+            this.label3.Size = new System.Drawing.Size(94, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã nhân viên:";
             // 
@@ -544,6 +550,16 @@
             this.toolStrip1item.TextSize = new System.Drawing.Size(0, 0);
             this.toolStrip1item.TextVisible = false;
             // 
+            // qL_HOMESTAYDataSet
+            // 
+            this.qL_HOMESTAYDataSet.DataSetName = "QL_HOMESTAYDataSet";
+            this.qL_HOMESTAYDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // qLHOMESTAYDataSetBindingSource
+            // 
+            this.qLHOMESTAYDataSetBindingSource.DataSource = this.qL_HOMESTAYDataSet;
+            this.qLHOMESTAYDataSetBindingSource.Position = 0;
+            // 
             // frm_QLNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -570,6 +586,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabPage1item)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel2item)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolStrip1item)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_HOMESTAYDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLHOMESTAYDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -620,5 +638,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup tabPage1item;
         private DevExpress.XtraLayout.LayoutControlItem panel2item;
         private DevExpress.XtraLayout.LayoutControlItem toolStrip1item;
+        private System.Windows.Forms.BindingSource qLHOMESTAYDataSetBindingSource;
+        private QL_HOMESTAYDataSet qL_HOMESTAYDataSet;
     }
 }
