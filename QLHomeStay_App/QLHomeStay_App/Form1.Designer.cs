@@ -124,6 +124,7 @@
             this.btn_trangchu.TabIndex = 4;
             this.btn_trangchu.Text = "TRANG CHỦ ";
             this.btn_trangchu.UseVisualStyleBackColor = false;
+            this.btn_trangchu.Click += new System.EventHandler(this.btn_trangchu_Click);
             // 
             // btn_quanlinhanvien
             // 
@@ -137,6 +138,7 @@
             this.btn_quanlinhanvien.TabIndex = 0;
             this.btn_quanlinhanvien.Text = "QUẢN LÝ NHÂN VIÊN VÀ TÀI KHOẢN";
             this.btn_quanlinhanvien.UseVisualStyleBackColor = false;
+            this.btn_quanlinhanvien.Click += new System.EventHandler(this.btn_quanlinhanvien_Click);
             // 
             // btn_DangXuat
             // 
@@ -206,6 +208,7 @@
             this.btn_QLKH.TabIndex = 1;
             this.btn_QLKH.Text = "QUẢN LÝ KHÁCH HÀNG";
             this.btn_QLKH.UseVisualStyleBackColor = false;
+            this.btn_QLKH.Click += new System.EventHandler(this.btn_QLKH_Click);
             // 
             // btn_qlphong
             // 
@@ -233,6 +236,7 @@
             this.btn_QLKM.TabIndex = 2;
             this.btn_QLKM.Text = "QUẢN LÝ KHUYẾN MÃI";
             this.btn_QLKM.UseVisualStyleBackColor = false;
+            this.btn_QLKM.Click += new System.EventHandler(this.btn_QLKM_Click);
             // 
             // btn_QLHD
             // 
@@ -259,6 +263,7 @@
             this.btn_QLDanhGia.TabIndex = 3;
             this.btn_QLDanhGia.Text = "QUẢN LÝ ĐÁNH GIÁ VÀ PHẢN HỒI";
             this.btn_QLDanhGia.UseVisualStyleBackColor = false;
+            this.btn_QLDanhGia.Click += new System.EventHandler(this.btn_QLDanhGia_Click);
             // 
             // btn_QLDV
             // 
@@ -272,6 +277,7 @@
             this.btn_QLDV.TabIndex = 3;
             this.btn_QLDV.Text = "QUẢN LÝ DỊCH VỤ VÀ TIỆN NGHỈ";
             this.btn_QLDV.UseVisualStyleBackColor = false;
+            this.btn_QLDV.Click += new System.EventHandler(this.btn_QLDV_Click);
             // 
             // panel_ViewMain_BotRight
             // 

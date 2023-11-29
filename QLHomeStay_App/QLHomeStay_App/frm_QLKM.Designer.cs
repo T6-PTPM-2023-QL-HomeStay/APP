@@ -122,7 +122,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 6, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 31);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 35);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -132,7 +132,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1272, 660);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1272, 656);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // label15
@@ -171,7 +171,7 @@
             this.dgv_khuyenmai.RowHeadersWidth = 51;
             this.dgv_khuyenmai.RowTemplate.Height = 24;
             this.dgv_khuyenmai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_khuyenmai.Size = new System.Drawing.Size(1264, 534);
+            this.dgv_khuyenmai.Size = new System.Drawing.Size(1264, 530);
             this.dgv_khuyenmai.TabIndex = 15;
             // 
             // Column1
@@ -344,7 +344,7 @@
             this.toolStripSeparator1});
             this.toolStripChucNang.Location = new System.Drawing.Point(4, 4);
             this.toolStripChucNang.Name = "toolStripChucNang";
-            this.toolStripChucNang.Size = new System.Drawing.Size(1272, 27);
+            this.toolStripChucNang.Size = new System.Drawing.Size(1272, 31);
             this.toolStripChucNang.TabIndex = 6;
             this.toolStripChucNang.Text = "toolStrip1";
             // 
@@ -353,7 +353,7 @@
             this.btn_them.Image = ((System.Drawing.Image)(resources.GetObject("btn_them.Image")));
             this.btn_them.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(70, 24);
+            this.btn_them.Size = new System.Drawing.Size(70, 28);
             this.btn_them.Text = "Thêm";
             // 
             // btnXoa
@@ -400,7 +400,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1288, 730);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_QLKM";
             this.Text = "QUẢN LÝ KHUYẾN MÃI";
             this.tabControl1.ResumeLayout(false);

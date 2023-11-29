@@ -113,10 +113,10 @@
             this.panel2.Controls.Add(this.grTTKH_TimKiem);
             this.panel2.Controls.Add(this.grTTKH_ThongTin);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(5, 32);
+            this.panel2.Location = new System.Drawing.Point(5, 36);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1536, 780);
+            this.panel2.Size = new System.Drawing.Size(1536, 776);
             this.panel2.TabIndex = 10;
             // 
             // panel3
@@ -126,7 +126,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 106);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1022, 674);
+            this.panel3.Size = new System.Drawing.Size(1022, 670);
             this.panel3.TabIndex = 7;
             // 
             // grTTKH_DanhSach
@@ -140,7 +140,7 @@
             this.grTTKH_DanhSach.Margin = new System.Windows.Forms.Padding(5);
             this.grTTKH_DanhSach.Name = "grTTKH_DanhSach";
             this.grTTKH_DanhSach.Padding = new System.Windows.Forms.Padding(5);
-            this.grTTKH_DanhSach.Size = new System.Drawing.Size(1022, 674);
+            this.grTTKH_DanhSach.Size = new System.Drawing.Size(1022, 670);
             this.grTTKH_DanhSach.TabIndex = 8;
             this.grTTKH_DanhSach.TabStop = false;
             this.grTTKH_DanhSach.Text = "Danh sách";
@@ -181,7 +181,7 @@
             this.dgv_khachhang.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_khachhang.RowHeadersWidth = 51;
             this.dgv_khachhang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_khachhang.Size = new System.Drawing.Size(1012, 645);
+            this.dgv_khachhang.Size = new System.Drawing.Size(1012, 641);
             this.dgv_khachhang.TabIndex = 0;
             // 
             // Column1
@@ -302,7 +302,7 @@
             this.grTTKH_ThongTin.Margin = new System.Windows.Forms.Padding(5);
             this.grTTKH_ThongTin.Name = "grTTKH_ThongTin";
             this.grTTKH_ThongTin.Padding = new System.Windows.Forms.Padding(5);
-            this.grTTKH_ThongTin.Size = new System.Drawing.Size(514, 780);
+            this.grTTKH_ThongTin.Size = new System.Drawing.Size(514, 776);
             this.grTTKH_ThongTin.TabIndex = 0;
             this.grTTKH_ThongTin.TabStop = false;
             this.grTTKH_ThongTin.Text = "Thông tin";
@@ -433,7 +433,7 @@
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(5, 5);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1536, 27);
+            this.toolStrip1.Size = new System.Drawing.Size(1536, 31);
             this.toolStrip1.TabIndex = 9;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -442,7 +442,7 @@
             this.btn_them.Image = ((System.Drawing.Image)(resources.GetObject("btn_them.Image")));
             this.btn_them.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(70, 24);
+            this.btn_them.Size = new System.Drawing.Size(70, 28);
             this.btn_them.Text = "Thêm";
             // 
             // btn_xoa
@@ -450,7 +450,7 @@
             this.btn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("btn_xoa.Image")));
             this.btn_xoa.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(59, 24);
+            this.btn_xoa.Size = new System.Drawing.Size(59, 28);
             this.btn_xoa.Text = "Xoá";
             // 
             // btn_sua
@@ -458,27 +458,27 @@
             this.btn_sua.Image = ((System.Drawing.Image)(resources.GetObject("btn_sua.Image")));
             this.btn_sua.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(58, 24);
+            this.btn_sua.Size = new System.Drawing.Size(58, 28);
             this.btn_sua.Text = "Sửa";
             // 
             // btn_reset
             // 
             this.btn_reset.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(49, 24);
+            this.btn_reset.Size = new System.Drawing.Size(49, 28);
             this.btn_reset.Text = "Reset";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton4
             // 
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(71, 24);
+            this.toolStripButton4.Size = new System.Drawing.Size(71, 28);
             this.toolStripButton4.Text = "Thoát";
             // 
             // errorProvider1
