@@ -105,11 +105,17 @@
     <Compile Include="frm_QLKM.Designer.cs">
       <DependentUpon>frm_QLKM.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_QLThongKe.cs">
+    <Compile Include="frm_QLNV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_QLThongKe.Designer.cs">
-      <DependentUpon>frm_QLThongKe.cs</DependentUpon>
+    <Compile Include="frm_QLNV.Designer.cs">
+      <DependentUpon>frm_QLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QLPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QLPHONG.Designer.cs">
+      <DependentUpon>frm_QLPHONG.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Trangchu.cs">
       <SubType>Form</SubType>
@@ -122,12 +128,6 @@
     </Compile>
     <Compile Include="frm_Login.Designer.cs">
       <DependentUpon>frm_Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_QLNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_QLNV.Designer.cs">
-      <DependentUpon>frm_QLNV.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -155,8 +155,8 @@
     <EmbeddedResource Include="frm_QLNV.resx">
       <DependentUpon>frm_QLNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_QLThongKe.resx">
-      <DependentUpon>frm_QLThongKe.cs</DependentUpon>
+    <EmbeddedResource Include="frm_QLPHONG.resx">
+      <DependentUpon>frm_QLPHONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Trangchu.resx">
       <DependentUpon>frm_Trangchu.cs</DependentUpon>

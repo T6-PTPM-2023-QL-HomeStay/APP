@@ -56,13 +56,7 @@ namespace QLHomeStay_App
         {
             Form QLHD = new frm_QLHD();
             openChildForm(QLHD);
-        }
-
-        private void btn_thongke_Click(object sender, EventArgs e)
-        {
-            Form QLTK = new frm_QLThongKe();
-            openChildForm(QLTK);
-        }
+        }       
 
         private void btn_QLDV_Click(object sender, EventArgs e)
         {
@@ -80,6 +74,12 @@ namespace QLHomeStay_App
         {
             Form QLKM = new frm_QLKM();
             openChildForm(QLKM);
+        }
+
+        private void btn_qlphong_Click(object sender, EventArgs e)
+        {
+            Form QLP= new frm_QLPHONG();
+            openChildForm(QLP);
         }
     }
 }
