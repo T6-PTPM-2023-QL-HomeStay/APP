@@ -37,6 +37,8 @@
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_capnhat = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_tenkhu = new System.Windows.Forms.TextBox();
+            this.txt_makhu = new System.Windows.Forms.TextBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,8 +49,6 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabNV = new System.Windows.Forms.TabControl();
-            this.txt_makhu = new System.Windows.Forms.TextBox();
-            this.txt_tenkhu = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_khu)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -94,6 +94,7 @@
             this.dgv_khu.RowTemplate.Height = 24;
             this.dgv_khu.Size = new System.Drawing.Size(600, 542);
             this.dgv_khu.TabIndex = 0;
+            this.dgv_khu.Click += new System.EventHandler(this.dgv_khu_Click);
             // 
             // groupBox1
             // 
@@ -130,6 +131,7 @@
             this.btn_xoa.TabIndex = 62;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_capnhat
             // 
@@ -144,6 +146,7 @@
             this.btn_capnhat.TabIndex = 61;
             this.btn_capnhat.Text = "Cập nhật";
             this.btn_capnhat.UseVisualStyleBackColor = false;
+            this.btn_capnhat.Click += new System.EventHandler(this.btn_capnhat_Click);
             // 
             // groupBox2
             // 
@@ -162,6 +165,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khu";
             // 
+            // txt_tenkhu
+            // 
+            this.txt_tenkhu.Location = new System.Drawing.Point(189, 266);
+            this.txt_tenkhu.Name = "txt_tenkhu";
+            this.txt_tenkhu.Size = new System.Drawing.Size(258, 28);
+            this.txt_tenkhu.TabIndex = 75;
+            // 
+            // txt_makhu
+            // 
+            this.txt_makhu.Location = new System.Drawing.Point(189, 213);
+            this.txt_makhu.Name = "txt_makhu";
+            this.txt_makhu.Size = new System.Drawing.Size(258, 28);
+            this.txt_makhu.TabIndex = 75;
+            // 
             // btn_them
             // 
             this.btn_them.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
@@ -175,6 +192,7 @@
             this.btn_them.TabIndex = 74;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label4
             // 
@@ -210,6 +228,7 @@
             this.tabSearchNV.Size = new System.Drawing.Size(1736, 787);
             this.tabSearchNV.TabIndex = 1;
             this.tabSearchNV.Text = "Chi Tiết";
+            this.tabSearchNV.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.tabSearchNV_MouseDoubleClick);
             // 
             // txtSearchNV
             // 
@@ -267,20 +286,6 @@
             this.tabNV.SelectedIndex = 0;
             this.tabNV.Size = new System.Drawing.Size(1744, 820);
             this.tabNV.TabIndex = 6;
-            // 
-            // txt_makhu
-            // 
-            this.txt_makhu.Location = new System.Drawing.Point(189, 213);
-            this.txt_makhu.Name = "txt_makhu";
-            this.txt_makhu.Size = new System.Drawing.Size(258, 28);
-            this.txt_makhu.TabIndex = 75;
-            // 
-            // txt_tenkhu
-            // 
-            this.txt_tenkhu.Location = new System.Drawing.Point(189, 266);
-            this.txt_tenkhu.Name = "txt_tenkhu";
-            this.txt_tenkhu.Size = new System.Drawing.Size(258, 28);
-            this.txt_tenkhu.TabIndex = 75;
             // 
             // frm_Khu
             // 

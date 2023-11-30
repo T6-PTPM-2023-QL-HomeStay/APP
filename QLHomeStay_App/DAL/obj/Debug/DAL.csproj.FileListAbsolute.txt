@@ -5,3 +5,10 @@ D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.AssemblyReferenc
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.dll
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.pdb
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.dll.config
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.dll
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.pdb
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.dll
+C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.pdb
