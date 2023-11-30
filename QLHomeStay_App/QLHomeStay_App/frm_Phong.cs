@@ -14,6 +14,7 @@ namespace QLHomeStay_App
     public partial class frm_Phong : Form
     {
         DAL_PHONG ph = new DAL_PHONG();
+        DataSet ds_phong = new DataSet();
         public frm_Phong()
         {
             InitializeComponent();
@@ -23,8 +24,8 @@ namespace QLHomeStay_App
             dgv_phong.Columns["MAKHU"].HeaderText = "Mã khu";
             dgv_phong.Columns["MALOAIPHONG"].HeaderText = "Mã loại phòng";
             dgv_phong.Columns["SOLUONGNGUOIO"].HeaderText = "Số lượng người ở";
-            cbo_khu.DataSource = ph.loadKhu();
-            cbo_loai.DataSource = ph.loadLoai();
+            
+           
         }
 
         private void btn_khu_Click(object sender, EventArgs e)
@@ -113,5 +114,26 @@ namespace QLHomeStay_App
             cbo_loai.Text = dgv_phong.CurrentRow.Cells[3].Value.ToString();
             txt_soluong.Text = dgv_phong.CurrentRow.Cells[4].Value.ToString();
         }
+
+        private void frm_Phong_Load(object sender, EventArgs e)
+        {
+            cbo_khu.DataSource = ph.loadKhu();
+            cbo_loai.DataSource = ph.loadLoai();
+            
+        }
+        //void DataBingding(DataTable pDT)
+        //{
+        //    txt_maphong.DataBindings.Clear();
+        //    txt_tenphong.DataBindings.Clear();
+        //    cbo_khu.DataBindings.Clear();
+        //    cbo_loai.DataBindings.Clear();
+        //    txt_soluong.DataBindings.Clear();
+
+        //    txt_maphong.DataBindings.Add("Text", pDT, "MAPHONG");
+        //    txt_tenphong.DataBindings.Add("Text", pDT, "TENPHONG");
+        //    cbo_khu.DataBindings.Add("Text", pDT, "MAKHU");
+        //    cbo_loai.DataBindings.Add("Text", pDT, "MALOAI");
+        //    txt_soluong.DataBindings.Add("Text", pDT, "SOLUONGNGUOIO");
+        //}
     }
 }

@@ -292,6 +292,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frm_Phong";
             this.Text = "QUẢN LÝ PHÒNG";
+            this.Load += new System.EventHandler(this.frm_Phong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phong)).EndInit();
             this.ResumeLayout(false);

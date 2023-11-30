@@ -35,7 +35,6 @@
             this.btn_QLNV = new System.Windows.Forms.Button();
             this.btn_QLKH = new System.Windows.Forms.Button();
             this.btn_QLP = new System.Windows.Forms.Button();
-            this.btn_QLHOPDONG = new System.Windows.Forms.Button();
             this.btn_QLDG = new System.Windows.Forms.Button();
             this.btn_QLKM = new System.Windows.Forms.Button();
             this.btn_QLTK = new System.Windows.Forms.Button();
@@ -130,19 +129,6 @@
             this.btn_QLP.Text = "QUẢN LÝ PHÒNG";
             this.btn_QLP.UseVisualStyleBackColor = false;
             this.btn_QLP.Click += new System.EventHandler(this.btn_QLP_Click);
-            // 
-            // btn_QLHOPDONG
-            // 
-            this.btn_QLHOPDONG.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_QLHOPDONG.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_QLHOPDONG.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_QLHOPDONG.Location = new System.Drawing.Point(545, 546);
-            this.btn_QLHOPDONG.Name = "btn_QLHOPDONG";
-            this.btn_QLHOPDONG.Size = new System.Drawing.Size(432, 141);
-            this.btn_QLHOPDONG.TabIndex = 35;
-            this.btn_QLHOPDONG.Text = "QUẢN LÝ HỢP ĐỒNG";
-            this.btn_QLHOPDONG.UseVisualStyleBackColor = false;
-            this.btn_QLHOPDONG.Click += new System.EventHandler(this.btn_QLHOPDONG_Click);
             // 
             // btn_QLDG
             // 
@@ -253,7 +239,6 @@
             this.Controls.Add(this.btn_QLDG);
             this.Controls.Add(this.btn_QLKM);
             this.Controls.Add(this.btn_QLDV);
-            this.Controls.Add(this.btn_QLHOPDONG);
             this.Controls.Add(this.btn_QLP);
             this.Controls.Add(this.btn_QLNV);
             this.Controls.Add(this.label5);
@@ -279,7 +264,6 @@
         private System.Windows.Forms.Button btn_QLNV;
         private System.Windows.Forms.Button btn_QLKH;
         private System.Windows.Forms.Button btn_QLP;
-        private System.Windows.Forms.Button btn_QLHOPDONG;
         private System.Windows.Forms.Button btn_QLDG;
         private System.Windows.Forms.Button btn_QLKM;
         private System.Windows.Forms.Button btn_QLTK;

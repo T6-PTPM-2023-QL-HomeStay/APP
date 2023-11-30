@@ -29,11 +29,7 @@ namespace QLHomeStay_App
             frm_QLKH.ShowDialog();
         }
 
-        private void btn_hopdong_Click(object sender, EventArgs e)
-        {
-            frm_Hopdong frm_Hopdong = new frm_Hopdong();
-            frm_Hopdong.ShowDialog();
-        }
+        
 
         private void btn_phong_Click(object sender, EventArgs e)
         {

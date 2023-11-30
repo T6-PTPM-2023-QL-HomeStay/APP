@@ -44,8 +44,7 @@ namespace QLHomeStay_App
 
         private void btn_QLHOPDONG_Click(object sender, EventArgs e)
         {
-            frm_Hopdong frm_Hopdong = new frm_Hopdong();    
-            frm_Hopdong.ShowDialog();
+           
         }
 
         private void btn_QLDV_Click(object sender, EventArgs e)
