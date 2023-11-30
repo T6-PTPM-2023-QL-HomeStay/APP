@@ -6,7 +6,70 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class DAL_DICHVU
+   public class DAL_DICHVU
     {
+        QuanLyHomeStayDataContext db = new QuanLyHomeStayDataContext();
+        public List<DICHVU> GetDICHVUs()
+        {
+            var dichVu = from k in db.DICHVUs select k;
+            return dichVu.ToList();
+        }
+
+        public bool themNhanPhong(DICHVU np)
+        {
+            try
+            {
+                db.DICHVUs.InsertOnSubmit(np);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool xoaNhanPhong(string maDV)
+        {
+            try
+            {
+                DICHVU dICHVU = db.DICHVUs.Where(p => p.MADV == maDV).FirstOrDefault();
+                db.DICHVUs.DeleteOnSubmit(dICHVU);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool suaNhanPhong(DICHVU p)
+        {
+            try
+            {
+                DICHVU _dv = db.DICHVUs.Where(ph => ph.MADV == p.MADV).FirstOrDefault();
+                _dv.TENDV = p.TENDV;
+                _dv.MAPHONG = p.MAPHONG;
+            
+
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool checkPrimaryKey(string ma)
+        {
+            List<DICHVU> dICHVUs = db.DICHVUs.Where(p => p.MAPHONG == ma).ToList();
+            if (dICHVUs.Count > 0)
+                return true;
+            return false;
+        }
+
+       
     }
 }

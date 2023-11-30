@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace QLHomeStay_App.Resources
 {
     public partial class frm_DichVu : Form
     {
+        
         public frm_DichVu()
         {
             InitializeComponent();
