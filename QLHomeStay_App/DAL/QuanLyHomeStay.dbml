@@ -10,17 +10,6 @@
       <Association Name="DICHVU_CTDV" Member="DICHVU" ThisKey="MADV" OtherKey="MADV" Type="DICHVU" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.CTHD" Member="CTHDs">
-    <Type Name="CTHD">
-      <Column Name="MACTHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="GIAMGIA" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="TONGTIENTHANHTOAN" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Association Name="DICHVU_CTHD" Member="DICHVU" ThisKey="MADV" OtherKey="MADV" Type="DICHVU" IsForeignKey="true" />
-      <Association Name="HOADON_CTHD" Member="HOADON" ThisKey="MAHD" OtherKey="MAHD" Type="HOADON" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CTKHUYENMAI" Member="CTKHUYENMAIs">
     <Type Name="CTKHUYENMAI">
       <Column Name="MACTKM" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -30,6 +19,17 @@
       <Column Name="SOLUONG" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="GIAKM" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Association Name="KHUYENMAI_CTKHUYENMAI" Member="KHUYENMAI" ThisKey="MAKHUYENMAI" OtherKey="MAKHUYENMAI" Type="KHUYENMAI" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CTHD" Member="CTHDs">
+    <Type Name="CTHD">
+      <Column Name="MACTHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GIAMGIA" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TONGTIENTHANHTOAN" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="HOADON_CTHD" Member="HOADON" ThisKey="MAHD" OtherKey="MAHD" Type="HOADON" IsForeignKey="true" />
+      <Association Name="DICHVU_CTHD" Member="DICHVU" ThisKey="MADV" OtherKey="MADV" Type="DICHVU" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.CTHOPDONG" Member="CTHOPDONGs">
@@ -51,16 +51,6 @@
       <Association Name="KHACHHANG_DANHGIA" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.DICHVU" Member="DICHVUs">
-    <Type Name="DICHVU">
-      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TENDV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Column Name="MAPHONG" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Association Name="DICHVU_CTDV" Member="CTDVs" ThisKey="MADV" OtherKey="MADV" Type="CTDV" />
-      <Association Name="DICHVU_CTHD" Member="CTHDs" ThisKey="MADV" OtherKey="MADV" Type="CTHD" />
-      <Association Name="PHONG_DICHVU" Member="PHONG" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHONG" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.HOADON" Member="HOADONs">
     <Type Name="HOADON">
       <Column Name="MAHD" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -72,6 +62,16 @@
       <Association Name="HOPDONG_HOADON" Member="HOPDONG" ThisKey="MAHOPDONG" OtherKey="MAHOPDONG" Type="HOPDONG" IsForeignKey="true" />
       <Association Name="KHACHHANG_HOADON" Member="KHACHHANG" ThisKey="MAKH" OtherKey="MAKH" Type="KHACHHANG" IsForeignKey="true" />
       <Association Name="PHONG_HOADON" Member="PHONG" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHONG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DICHVU" Member="DICHVUs">
+    <Type Name="DICHVU">
+      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENDV" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="MAPHONG" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="DICHVU_CTDV" Member="CTDVs" ThisKey="MADV" OtherKey="MADV" Type="CTDV" />
+      <Association Name="DICHVU_CTHD" Member="CTHDs" ThisKey="MADV" OtherKey="MADV" Type="CTHD" />
+      <Association Name="PHONG_DICHVU" Member="PHONG" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="PHONG" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.HOPDONG" Member="HOPDONGs">
@@ -149,8 +149,8 @@
       <Column Name="TENPHONG" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="SOLUONGNGUOIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TRANGTHAI" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
-      <Association Name="PHONG_DICHVU" Member="DICHVUs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="DICHVU" />
       <Association Name="PHONG_HOADON" Member="HOADONs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="HOADON" />
+      <Association Name="PHONG_DICHVU" Member="DICHVUs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="DICHVU" />
       <Association Name="PHONG_HOPDONG" Member="HOPDONGs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="HOPDONG" />
       <Association Name="PHONG_KHUYENMAI" Member="KHUYENMAIs" ThisKey="MAPHONG" OtherKey="MAPHONG" Type="KHUYENMAI" />
       <Association Name="KHU_PHONG" Member="KHU" ThisKey="MAKHU" OtherKey="MAKHU" Type="KHU" IsForeignKey="true" />

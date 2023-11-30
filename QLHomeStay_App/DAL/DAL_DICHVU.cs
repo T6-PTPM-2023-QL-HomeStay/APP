@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DAL
 {
-   public class DAL_DICHVU
+    public class DAL_DICHVU
     {
         QuanLyHomeStayDataContext db = new QuanLyHomeStayDataContext();
         public List<DICHVU> GetDICHVUs()
@@ -14,6 +15,34 @@ namespace DAL
             var dichVu = from k in db.DICHVUs select k;
             return dichVu.ToList();
         }
+
+        public DataTable ConvertDICHVUsToDataTable()
+        {
+            List<DICHVU> dichVus = GetDICHVUs();
+
+
+            DataTable dataTable = new DataTable();
+
+            
+            foreach (var property in typeof(DICHVU).GetProperties())
+            {
+                dataTable.Columns.Add(property.Name, property.PropertyType);
+            }
+            foreach (var dichvu in dichVus)
+            {
+                DataRow row = dataTable.NewRow();
+                foreach (var property in typeof(DICHVU).GetProperties())
+                {
+                    row[property.Name] = property.GetValue(dichvu);
+                }
+
+                dataTable.Rows.Add(row);
+            }
+
+            return dataTable;
+        }
+
+        
 
         public bool themNhanPhong(DICHVU np)
         {
@@ -51,8 +80,6 @@ namespace DAL
                 DICHVU _dv = db.DICHVUs.Where(ph => ph.MADV == p.MADV).FirstOrDefault();
                 _dv.TENDV = p.TENDV;
                 _dv.MAPHONG = p.MAPHONG;
-            
-
                 db.SubmitChanges();
                 return true;
             }
@@ -70,6 +97,15 @@ namespace DAL
             return false;
         }
 
-       
+        public List<String> loadPhong()
+        {
+            var data = from entity in db.DICHVUs
+                       select entity.MAPHONG;
+
+
+            return data.ToList();
+        }
+
+
     }
 }

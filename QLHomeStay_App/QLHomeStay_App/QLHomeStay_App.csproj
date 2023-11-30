@@ -305,5 +305,11 @@
     <None Include="Resources\user-128.png" />
     <Content Include="Resources\video.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{75db2418-dbd2-463a-8828-62c2b5194e96}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,9 +42,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txt_madv = new System.Windows.Forms.TextBox();
             this.txt_tendv = new System.Windows.Forms.TextBox();
+            this.txt_madv = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_dv)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -85,6 +85,7 @@
             this.btn_them.TabIndex = 143;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
@@ -99,6 +100,7 @@
             this.btn_xoa.TabIndex = 142;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_capnhat
             // 
@@ -113,6 +115,7 @@
             this.btn_capnhat.TabIndex = 141;
             this.btn_capnhat.Text = "Cập nhật";
             this.btn_capnhat.UseVisualStyleBackColor = false;
+            this.btn_capnhat.Click += new System.EventHandler(this.btn_capnhat_Click);
             // 
             // dgv_dv
             // 
@@ -218,6 +221,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin dịch vụ";
             // 
+            // txt_tendv
+            // 
+            this.txt_tendv.Location = new System.Drawing.Point(230, 152);
+            this.txt_tendv.Name = "txt_tendv";
+            this.txt_tendv.Size = new System.Drawing.Size(215, 28);
+            this.txt_tendv.TabIndex = 145;
+            // 
+            // txt_madv
+            // 
+            this.txt_madv.Location = new System.Drawing.Point(230, 101);
+            this.txt_madv.Name = "txt_madv";
+            this.txt_madv.Size = new System.Drawing.Size(215, 28);
+            this.txt_madv.TabIndex = 145;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -228,20 +245,6 @@
             this.label16.Size = new System.Drawing.Size(106, 25);
             this.label16.TabIndex = 136;
             this.label16.Text = "Tìm kiếm:";
-            // 
-            // txt_madv
-            // 
-            this.txt_madv.Location = new System.Drawing.Point(230, 101);
-            this.txt_madv.Name = "txt_madv";
-            this.txt_madv.Size = new System.Drawing.Size(215, 28);
-            this.txt_madv.TabIndex = 145;
-            // 
-            // txt_tendv
-            // 
-            this.txt_tendv.Location = new System.Drawing.Point(230, 152);
-            this.txt_tendv.Name = "txt_tendv";
-            this.txt_tendv.Size = new System.Drawing.Size(215, 28);
-            this.txt_tendv.TabIndex = 145;
             // 
             // frm_DichVu
             // 
