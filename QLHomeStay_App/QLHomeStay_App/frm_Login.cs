@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace QLHomeStay_App
 {
@@ -16,16 +17,22 @@ namespace QLHomeStay_App
         {
             InitializeComponent();
         }
+        DAL_DANGNHAP dn = new DAL_DANGNHAP();
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            if (dn.DangNhap(txtUser.Text, txtPass.Text)==true)
+            {
+                frm_Main frm_Main = new frm_Main();
+                frm_Main.ShowDialog();
+            }
+            else
+                MessageBox.Show("Vui lòng kiểm tra lại tên đăng nhập và mật khẩu");
         }
 
         private void btnLogin_Click_1(object sender, EventArgs e)
         {
-            frm_Main frm_Main = new frm_Main();
-            frm_Main.ShowDialog();
+
         }
     }
 }
