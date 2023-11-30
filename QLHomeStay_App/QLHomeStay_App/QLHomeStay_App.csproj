@@ -82,12 +82,6 @@
     <Compile Include="frm_CTHD.Designer.cs">
       <DependentUpon>frm_CTHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CTHopDong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CTHopDong.Designer.cs">
-      <DependentUpon>frm_CTHopDong.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CTKM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,12 +93,6 @@
     </Compile>
     <Compile Include="frm_HoaDon.Designer.cs">
       <DependentUpon>frm_HoaDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_Hopdong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_Hopdong.Designer.cs">
-      <DependentUpon>frm_Hopdong.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Khu.cs">
       <SubType>Form</SubType>
@@ -186,17 +174,11 @@
     <EmbeddedResource Include="frm_CTHD.resx">
       <DependentUpon>frm_CTHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CTHopDong.resx">
-      <DependentUpon>frm_CTHopDong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_CTKM.resx">
       <DependentUpon>frm_CTKM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_HoaDon.resx">
       <DependentUpon>frm_HoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_Hopdong.resx">
-      <DependentUpon>frm_Hopdong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Khu.resx">
       <DependentUpon>frm_Khu.cs</DependentUpon>

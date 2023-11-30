@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_hopdong = new System.Windows.Forms.Button();
             this.btn_hd = new System.Windows.Forms.Button();
             this.btn_kh = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
@@ -40,34 +39,22 @@
             this.label9 = new System.Windows.Forms.Label();
             this.cbo_makh = new System.Windows.Forms.ComboBox();
             this.cbo_phong = new System.Windows.Forms.ComboBox();
-            this.cbo_mahopdong = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txt_hd = new System.Windows.Forms.TextBox();
             this.dt_ngaytao = new System.Windows.Forms.DateTimePicker();
             this.btn_phong = new System.Windows.Forms.Button();
             this.btn_bill = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txt_hd = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btn_hopdong
-            // 
-            this.btn_hopdong.Location = new System.Drawing.Point(509, 170);
-            this.btn_hopdong.Name = "btn_hopdong";
-            this.btn_hopdong.Size = new System.Drawing.Size(33, 24);
-            this.btn_hopdong.TabIndex = 144;
-            this.btn_hopdong.Text = "+";
-            this.btn_hopdong.UseVisualStyleBackColor = true;
-            this.btn_hopdong.Click += new System.EventHandler(this.btn_hopdong_Click);
             // 
             // btn_hd
             // 
@@ -185,24 +172,16 @@
             // cbo_phong
             // 
             this.cbo_phong.FormattingEnabled = true;
-            this.cbo_phong.Location = new System.Drawing.Point(185, 216);
+            this.cbo_phong.Location = new System.Drawing.Point(185, 176);
             this.cbo_phong.Name = "cbo_phong";
             this.cbo_phong.Size = new System.Drawing.Size(298, 30);
             this.cbo_phong.TabIndex = 139;
-            // 
-            // cbo_mahopdong
-            // 
-            this.cbo_mahopdong.FormattingEnabled = true;
-            this.cbo_mahopdong.Location = new System.Drawing.Point(185, 168);
-            this.cbo_mahopdong.Name = "cbo_mahopdong";
-            this.cbo_mahopdong.Size = new System.Drawing.Size(298, 30);
-            this.cbo_mahopdong.TabIndex = 140;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(54, 264);
+            this.label4.Location = new System.Drawing.Point(54, 224);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 21);
@@ -213,7 +192,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(54, 214);
+            this.label3.Location = new System.Drawing.Point(54, 174);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 21);
@@ -231,17 +210,6 @@
             this.label10.TabIndex = 135;
             this.label10.Text = "Mã khách hàng:";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(33, 168);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 21);
-            this.label2.TabIndex = 132;
-            this.label2.Text = "Mã hợp đồng:";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -258,7 +226,6 @@
             this.groupBox2.Controls.Add(this.txt_hd);
             this.groupBox2.Controls.Add(this.dt_ngaytao);
             this.groupBox2.Controls.Add(this.btn_phong);
-            this.groupBox2.Controls.Add(this.btn_hopdong);
             this.groupBox2.Controls.Add(this.btn_hd);
             this.groupBox2.Controls.Add(this.btn_kh);
             this.groupBox2.Controls.Add(this.btn_bill);
@@ -267,11 +234,9 @@
             this.groupBox2.Controls.Add(this.btn_capnhat);
             this.groupBox2.Controls.Add(this.cbo_makh);
             this.groupBox2.Controls.Add(this.cbo_phong);
-            this.groupBox2.Controls.Add(this.cbo_mahopdong);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 222);
@@ -281,16 +246,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin hóa đơn";
             // 
+            // txt_hd
+            // 
+            this.txt_hd.Location = new System.Drawing.Point(185, 70);
+            this.txt_hd.Name = "txt_hd";
+            this.txt_hd.Size = new System.Drawing.Size(298, 28);
+            this.txt_hd.TabIndex = 147;
+            // 
             // dt_ngaytao
             // 
-            this.dt_ngaytao.Location = new System.Drawing.Point(185, 264);
+            this.dt_ngaytao.Location = new System.Drawing.Point(185, 224);
             this.dt_ngaytao.Name = "dt_ngaytao";
             this.dt_ngaytao.Size = new System.Drawing.Size(298, 28);
             this.dt_ngaytao.TabIndex = 146;
             // 
             // btn_phong
             // 
-            this.btn_phong.Location = new System.Drawing.Point(509, 222);
+            this.btn_phong.Location = new System.Drawing.Point(509, 182);
             this.btn_phong.Name = "btn_phong";
             this.btn_phong.Size = new System.Drawing.Size(33, 24);
             this.btn_phong.TabIndex = 144;
@@ -334,13 +306,6 @@
             this.pictureBox1.TabIndex = 133;
             this.pictureBox1.TabStop = false;
             // 
-            // txt_hd
-            // 
-            this.txt_hd.Location = new System.Drawing.Point(185, 70);
-            this.txt_hd.Name = "txt_hd";
-            this.txt_hd.Size = new System.Drawing.Size(298, 28);
-            this.txt_hd.TabIndex = 147;
-            // 
             // frm_HoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -367,7 +332,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_hopdong;
         private System.Windows.Forms.Button btn_hd;
         private System.Windows.Forms.Button btn_kh;
         private System.Windows.Forms.Button btn_them;
@@ -379,11 +343,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbo_makh;
         private System.Windows.Forms.ComboBox cbo_phong;
-        private System.Windows.Forms.ComboBox cbo_mahopdong;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label16;

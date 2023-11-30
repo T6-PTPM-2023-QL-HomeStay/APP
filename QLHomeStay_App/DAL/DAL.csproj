@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DAL_DANGNHAP.cs" />
     <Compile Include="DAL_DICHVU.cs" />
+    <Compile Include="DAL_HOPDONG.cs" />
     <Compile Include="DAL_KHU.cs" />
     <Compile Include="DAL_LOAI.cs" />
     <Compile Include="DAL_PHONG.cs" />
