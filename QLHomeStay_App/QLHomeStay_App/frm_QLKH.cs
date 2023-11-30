@@ -1,5 +1,4 @@
-﻿using DevExpress.XtraEditors;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,16 +10,17 @@ using System.Windows.Forms;
 
 namespace QLHomeStay_App
 {
-    public partial class frm_QLKH : DevExpress.XtraEditors.XtraForm
+    public partial class frm_QLKH : Form
     {
         public frm_QLKH()
         {
             InitializeComponent();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void btn_tk_Click(object sender, EventArgs e)
         {
-
+            frm_QLTK frm_QLTK = new frm_QLTK(); 
+            frm_QLTK.ShowDialog();
         }
     }
 }

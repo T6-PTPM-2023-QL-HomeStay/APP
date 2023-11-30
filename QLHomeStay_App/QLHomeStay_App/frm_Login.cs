@@ -19,8 +19,13 @@ namespace QLHomeStay_App
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form1 frmain = new Form1();
-            frmain.ShowDialog();
+            
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            frm_Main frm_Main = new frm_Main();
+            frm_Main.ShowDialog();
         }
     }
 }
