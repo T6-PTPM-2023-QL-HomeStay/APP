@@ -65,5 +65,10 @@ namespace QLHomeStay_App
             frm_HoaDon frm_HoaDon = new frm_HoaDon();   
             frm_HoaDon.ShowDialog();
         }
+
+        private void btn_QLTK_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

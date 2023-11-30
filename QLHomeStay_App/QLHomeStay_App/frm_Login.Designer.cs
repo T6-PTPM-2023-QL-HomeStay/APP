@@ -28,41 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.picShow = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.picHide = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lblQuenMK = new System.Windows.Forms.PictureBox();
-            this.picShow = new System.Windows.Forms.PictureBox();
-            this.picHide = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuenMK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picShow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHide)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Script", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label6.Location = new System.Drawing.Point(620, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(542, 99);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Hotel DevExress";
             // 
             // label5
             // 
@@ -71,9 +58,9 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label5.Location = new System.Drawing.Point(1112, 660);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 34);
+            this.label5.Size = new System.Drawing.Size(160, 34);
             this.label5.TabIndex = 26;
-            this.label5.Text = "Khách Sạn";
+            this.label5.Text = "HomeStay";
             // 
             // label4
             // 
@@ -114,6 +101,18 @@
             this.label7.Size = new System.Drawing.Size(151, 21);
             this.label7.TabIndex = 16;
             this.label7.Text = "Quên Mật Khẩu?";
+            // 
+            // picShow
+            // 
+            this.picShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picShow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picShow.Image = global::QLHomeStay_App.Properties.Resources.eye;
+            this.picShow.Location = new System.Drawing.Point(368, 205);
+            this.picShow.Name = "picShow";
+            this.picShow.Size = new System.Drawing.Size(24, 30);
+            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picShow.TabIndex = 5;
+            this.picShow.TabStop = false;
             // 
             // btnLogin
             // 
@@ -166,10 +165,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Tài khoản";
             // 
+            // picHide
+            // 
+            this.picHide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picHide.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picHide.Location = new System.Drawing.Point(368, 205);
+            this.picHide.Name = "picHide";
+            this.picHide.Size = new System.Drawing.Size(23, 30);
+            this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHide.TabIndex = 6;
+            this.picHide.TabStop = false;
+            // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::QLHomeStay_App.Properties.Resources._5s1;
-            this.pictureBox4.Location = new System.Drawing.Point(750, 75);
+            this.pictureBox4.Location = new System.Drawing.Point(745, 132);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(283, 127);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -196,38 +206,16 @@
             this.pictureBox3.TabIndex = 27;
             this.pictureBox3.TabStop = false;
             // 
-            // lblQuenMK
+            // label6
             // 
-            this.lblQuenMK.Image = global::QLHomeStay_App.Properties.Resources.hotelBG1;
-            this.lblQuenMK.Location = new System.Drawing.Point(720, 242);
-            this.lblQuenMK.Name = "lblQuenMK";
-            this.lblQuenMK.Size = new System.Drawing.Size(556, 404);
-            this.lblQuenMK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblQuenMK.TabIndex = 24;
-            this.lblQuenMK.TabStop = false;
-            // 
-            // picShow
-            // 
-            this.picShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picShow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picShow.Image = global::QLHomeStay_App.Properties.Resources.eye;
-            this.picShow.Location = new System.Drawing.Point(368, 205);
-            this.picShow.Name = "picShow";
-            this.picShow.Size = new System.Drawing.Size(24, 30);
-            this.picShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picShow.TabIndex = 5;
-            this.picShow.TabStop = false;
-            // 
-            // picHide
-            // 
-            this.picHide.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picHide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picHide.Location = new System.Drawing.Point(368, 205);
-            this.picHide.Name = "picHide";
-            this.picHide.Size = new System.Drawing.Size(23, 30);
-            this.picHide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picHide.TabIndex = 6;
-            this.picHide.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe Script", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
+            this.label6.Location = new System.Drawing.Point(605, 33);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(627, 83);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "QUẢN LÝ HOME STAY";
             // 
             // frm_Login
             // 
@@ -241,32 +229,27 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.lblQuenMK);
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_Login";
             this.Text = "ĐĂNG NHẬP";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuenMK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picShow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picHide)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox lblQuenMK;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox picShow;
@@ -276,5 +259,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picHide;
+        private System.Windows.Forms.Label label6;
     }
 }

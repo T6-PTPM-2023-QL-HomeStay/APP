@@ -42,28 +42,28 @@
             this.btn_QLDV = new System.Windows.Forms.Button();
             this.btn_QLHD = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.lblQuenMK = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuenMK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Script", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe Script", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
             this.label6.Location = new System.Drawing.Point(435, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(542, 99);
+            this.label6.Size = new System.Drawing.Size(627, 83);
             this.label6.TabIndex = 32;
-            this.label6.Text = "Hotel DevExress";
+            this.label6.Text = "QUẢN LÝ HOME STAY";
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::QLHomeStay_App.Properties.Resources._5s1;
-            this.pictureBox4.Location = new System.Drawing.Point(626, 75);
+            this.pictureBox4.Location = new System.Drawing.Point(628, 113);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(283, 127);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,18 +75,18 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label5.Location = new System.Drawing.Point(696, 270);
+            this.label5.Location = new System.Drawing.Point(698, 302);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 34);
+            this.label5.Size = new System.Drawing.Size(160, 34);
             this.label5.TabIndex = 34;
-            this.label5.Text = "Khách Sạn";
+            this.label5.Text = "HomeStay";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(198)))), ((int)(((byte)(218)))));
-            this.label4.Location = new System.Drawing.Point(623, 221);
+            this.label4.Location = new System.Drawing.Point(625, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(286, 34);
             this.label4.TabIndex = 33;
@@ -181,6 +181,7 @@
             this.btn_QLTK.TabIndex = 35;
             this.btn_QLTK.Text = "THỐNG KÊ";
             this.btn_QLTK.UseVisualStyleBackColor = false;
+            this.btn_QLTK.Click += new System.EventHandler(this.btn_QLTK_Click);
             // 
             // btn_QLDV
             // 
@@ -217,16 +218,6 @@
             this.button10.Text = "QUẢN LÝ ĐÁNH GIÁ";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // lblQuenMK
-            // 
-            this.lblQuenMK.Image = global::QLHomeStay_App.Properties.Resources.hotelBG1;
-            this.lblQuenMK.Location = new System.Drawing.Point(1052, 75);
-            this.lblQuenMK.Name = "lblQuenMK";
-            this.lblQuenMK.Size = new System.Drawing.Size(432, 248);
-            this.lblQuenMK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.lblQuenMK.TabIndex = 36;
-            this.lblQuenMK.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::QLHomeStay_App.Properties.Resources.hotel_building_vector_381902;
@@ -237,14 +228,24 @@
             this.pictureBox3.TabIndex = 37;
             this.pictureBox3.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QLHomeStay_App.Properties.Resources.hotel_building_vector_381902;
+            this.pictureBox1.Location = new System.Drawing.Point(1002, 98);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(432, 204);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
             // frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1548, 876);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.lblQuenMK);
             this.Controls.Add(this.btn_QLKH);
             this.Controls.Add(this.btn_QLTK);
             this.Controls.Add(this.button10);
@@ -262,8 +263,8 @@
             this.Name = "frm_Main";
             this.Text = "Trang chủ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lblQuenMK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,7 +286,7 @@
         private System.Windows.Forms.Button btn_QLDV;
         private System.Windows.Forms.Button btn_QLHD;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.PictureBox lblQuenMK;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
