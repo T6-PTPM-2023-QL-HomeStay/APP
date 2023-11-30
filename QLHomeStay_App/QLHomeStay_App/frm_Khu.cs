@@ -19,7 +19,7 @@ namespace QLHomeStay_App
             InitializeComponent();
             dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
             dgv_khu.Columns["MAKHU"].HeaderText = "Mã Khu";
-            dgv_khu.Columns["TENKHU"].HeaderText = "Tên Tên Khu";            
+            dgv_khu.Columns["TENKHU"].HeaderText = "Tên Khu";            
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace QLHomeStay_App
                     TENKHU = txt_tenkhu.Text,
 
                 };
-                if (khu.suaDichVu(p))
+                if (khu.suakhu(p))
                     MessageBox.Show("Sửa thành công!");
                 else
                     MessageBox.Show("Sửa thất bại!");

@@ -1,5 +1,4 @@
-﻿using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -8,33 +7,33 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class DAL_KHU
+    public class DAL_LOAI
     {
         QuanLyHomeStayDataContext db = new QuanLyHomeStayDataContext();
 
-        public List<KHU> GetKHUs()
+        public List<LOAIPHONG> GetLOAIPHONGs()
         {
-            var khu = from k in db.KHUs select k;
-            return khu.ToList();
+            var LOAIPHONG = from k in db.LOAIPHONGs select k;
+            return LOAIPHONG.ToList();
         }
-        public DataTable ConvertKHUsToDataTable()
+        public DataTable ConvertLOAIPHONGsToDataTable()
         {
-            List<KHU> khus = GetKHUs();
+            List<LOAIPHONG> LOAIPHONGs = GetLOAIPHONGs();
 
 
             DataTable dataTable = new DataTable();
 
 
-            foreach (var property in typeof(KHU).GetProperties())
+            foreach (var property in typeof(LOAIPHONG).GetProperties())
             {
                 dataTable.Columns.Add(property.Name, property.PropertyType);
             }
-            foreach (var khu in khus)
+            foreach (var LOAIPHONG in LOAIPHONGs)
             {
                 DataRow row = dataTable.NewRow();
-                foreach (var property in typeof(KHU).GetProperties())
+                foreach (var property in typeof(LOAIPHONG).GetProperties())
                 {
-                    row[property.Name] = property.GetValue(khu);
+                    row[property.Name] = property.GetValue(LOAIPHONG);
                 }
 
                 dataTable.Rows.Add(row);
@@ -42,11 +41,11 @@ namespace DAL
 
             return dataTable;
         }
-        public bool themKhu(KHU np)
+        public bool themLOAIPHONG(LOAIPHONG np)
         {
             try
             {
-                db.KHUs.InsertOnSubmit(np);
+                db.LOAIPHONGs.InsertOnSubmit(np);
                 db.SubmitChanges();
                 return true;
             }
@@ -55,12 +54,12 @@ namespace DAL
                 return false;
             }
         }
-        public bool xoaKhu(string maKhu)
+        public bool xoaLOAIPHONG(string maLOAIPHONG)
         {
             try
             {
-                KHU khu = db.KHUs.Where(p => p.MAKHU == maKhu).FirstOrDefault();
-                db.KHUs.DeleteOnSubmit(khu);
+                LOAIPHONG LOAIPHONG = db.LOAIPHONGs.Where(p => p.MALOAI == maLOAIPHONG).FirstOrDefault();
+                db.LOAIPHONGs.DeleteOnSubmit(LOAIPHONG);
                 db.SubmitChanges();
                 return true;
             }
@@ -69,13 +68,14 @@ namespace DAL
                 return false;
             }
         }
-        public bool suakhu(KHU p)
+        public bool suaLoai(LOAIPHONG p)
         {
             try
             {
-                KHU _dv = db.KHUs.Where(ph => ph.MAKHU == p.MAKHU).FirstOrDefault();
-                _dv.TENKHU = p.TENKHU;
-               
+                LOAIPHONG _dv = db.LOAIPHONGs.Where(ph => ph.MALOAI == p.MALOAI).FirstOrDefault();
+                _dv.TENLOAI = p.TENLOAI;
+                _dv.GIAPH = p.GIAPH;
+
                 db.SubmitChanges();
                 return true;
             }
@@ -87,19 +87,19 @@ namespace DAL
 
         public bool checkPrimaryKey(string ma)
         {
-            List<KHU> khus = db.KHUs.Where(p => p.MAKHU == ma).ToList();
-            if (khus.Count > 0)
+            List<LOAIPHONG> LOAIPHONGs = db.LOAIPHONGs.Where(p => p.MALOAI == ma).ToList();
+            if (LOAIPHONGs.Count > 0)
                 return true;
             return false;
-        }  
-        
-        public bool search(string tenkhu)
+        }
+
+        public bool search(string tenLOAIPHONG)
         {
             try
             {
-                KHU _dv = db.KHUs.Where(ph => ph.TENKHU == tenkhu).FirstOrDefault();
+                LOAIPHONG _dv = db.LOAIPHONGs.Where(ph => ph.TENLOAI == tenLOAIPHONG).FirstOrDefault();
                 if (_dv != null)
-                {                   
+                {
                     db.SubmitChanges();
                     return true;
                 }
@@ -110,6 +110,5 @@ namespace DAL
                 return false;
             }
         }
-
     }
 }

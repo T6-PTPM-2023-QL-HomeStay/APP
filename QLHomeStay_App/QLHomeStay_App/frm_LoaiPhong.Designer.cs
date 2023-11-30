@@ -33,6 +33,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.txt_tenloai = new System.Windows.Forms.TextBox();
+            this.txt_maloai = new System.Windows.Forms.TextBox();
             this.txt_giaphong = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_maloai = new System.Windows.Forms.TextBox();
-            this.txt_tenloai = new System.Windows.Forms.TextBox();
             this.tabNV.SuspendLayout();
             this.tabSearchNV.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -117,6 +117,7 @@
             this.btn_them.TabIndex = 74;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label4
             // 
@@ -128,6 +129,24 @@
             this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 72;
             this.label4.Text = "Mã loại:";
+            // 
+            // txt_tenloai
+            // 
+            this.txt_tenloai.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_tenloai.Location = new System.Drawing.Point(184, 264);
+            this.txt_tenloai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_tenloai.Name = "txt_tenloai";
+            this.txt_tenloai.Size = new System.Drawing.Size(291, 32);
+            this.txt_tenloai.TabIndex = 69;
+            // 
+            // txt_maloai
+            // 
+            this.txt_maloai.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_maloai.Location = new System.Drawing.Point(184, 214);
+            this.txt_maloai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_maloai.Name = "txt_maloai";
+            this.txt_maloai.Size = new System.Drawing.Size(291, 32);
+            this.txt_maloai.TabIndex = 69;
             // 
             // txt_giaphong
             // 
@@ -173,6 +192,7 @@
             this.btn_Xoa.TabIndex = 62;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = false;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_capnhat
             // 
@@ -187,6 +207,7 @@
             this.btn_capnhat.TabIndex = 61;
             this.btn_capnhat.Text = "Cập nhật";
             this.btn_capnhat.UseVisualStyleBackColor = false;
+            this.btn_capnhat.Click += new System.EventHandler(this.btn_capnhat_Click);
             // 
             // groupBox1
             // 
@@ -208,6 +229,7 @@
             this.dgv_loai.RowTemplate.Height = 24;
             this.dgv_loai.Size = new System.Drawing.Size(600, 542);
             this.dgv_loai.TabIndex = 0;
+            this.dgv_loai.Click += new System.EventHandler(this.dgv_loai_Click);
             // 
             // label16
             // 
@@ -291,24 +313,6 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.Width = 125;
-            // 
-            // txt_maloai
-            // 
-            this.txt_maloai.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_maloai.Location = new System.Drawing.Point(184, 214);
-            this.txt_maloai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_maloai.Name = "txt_maloai";
-            this.txt_maloai.Size = new System.Drawing.Size(291, 32);
-            this.txt_maloai.TabIndex = 69;
-            // 
-            // txt_tenloai
-            // 
-            this.txt_tenloai.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_tenloai.Location = new System.Drawing.Point(184, 264);
-            this.txt_tenloai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_tenloai.Name = "txt_tenloai";
-            this.txt_tenloai.Size = new System.Drawing.Size(291, 32);
-            this.txt_tenloai.TabIndex = 69;
             // 
             // frm_LoaiPhong
             // 
