@@ -38,7 +38,6 @@
             this.btn_them = new System.Windows.Forms.Button();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_capnhat = new System.Windows.Forms.Button();
-            this.nup_soluongnguoio = new System.Windows.Forms.NumericUpDown();
             this.cbo_loai = new System.Windows.Forms.ComboBox();
             this.cbo_khu = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,9 +47,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_maphong = new System.Windows.Forms.TextBox();
             this.txt_tenphong = new System.Windows.Forms.TextBox();
+            this.txt_soluong = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_soluongnguoio)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -86,6 +85,7 @@
             this.dgv_phong.RowTemplate.Height = 24;
             this.dgv_phong.Size = new System.Drawing.Size(657, 358);
             this.dgv_phong.TabIndex = 89;
+            this.dgv_phong.Click += new System.EventHandler(this.dgv_phong_Click);
             // 
             // label16
             // 
@@ -140,6 +140,7 @@
             this.btn_them.TabIndex = 108;
             this.btn_them.Text = "Thêm";
             this.btn_them.UseVisualStyleBackColor = false;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // btn_xoa
             // 
@@ -154,6 +155,7 @@
             this.btn_xoa.TabIndex = 107;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = false;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_capnhat
             // 
@@ -168,13 +170,7 @@
             this.btn_capnhat.TabIndex = 106;
             this.btn_capnhat.Text = "Cập nhật";
             this.btn_capnhat.UseVisualStyleBackColor = false;
-            // 
-            // nup_soluongnguoio
-            // 
-            this.nup_soluongnguoio.Location = new System.Drawing.Point(338, 393);
-            this.nup_soluongnguoio.Name = "nup_soluongnguoio";
-            this.nup_soluongnguoio.Size = new System.Drawing.Size(218, 22);
-            this.nup_soluongnguoio.TabIndex = 105;
+            this.btn_capnhat.Click += new System.EventHandler(this.btn_capnhat_Click);
             // 
             // cbo_loai
             // 
@@ -261,12 +257,20 @@
             this.txt_tenphong.Size = new System.Drawing.Size(219, 22);
             this.txt_tenphong.TabIndex = 111;
             // 
+            // txt_soluong
+            // 
+            this.txt_soluong.Location = new System.Drawing.Point(334, 391);
+            this.txt_soluong.Name = "txt_soluong";
+            this.txt_soluong.Size = new System.Drawing.Size(219, 22);
+            this.txt_soluong.TabIndex = 111;
+            // 
             // frm_Phong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(751, 911);
+            this.Controls.Add(this.txt_soluong);
             this.Controls.Add(this.txt_tenphong);
             this.Controls.Add(this.txt_maphong);
             this.Controls.Add(this.btn_loai);
@@ -274,7 +278,6 @@
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_capnhat);
-            this.Controls.Add(this.nup_soluongnguoio);
             this.Controls.Add(this.cbo_loai);
             this.Controls.Add(this.cbo_khu);
             this.Controls.Add(this.label4);
@@ -291,7 +294,6 @@
             this.Text = "QUẢN LÝ PHÒNG";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_phong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nup_soluongnguoio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,7 +311,6 @@
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_capnhat;
-        private System.Windows.Forms.NumericUpDown nup_soluongnguoio;
         private System.Windows.Forms.ComboBox cbo_loai;
         private System.Windows.Forms.ComboBox cbo_khu;
         private System.Windows.Forms.Label label4;
@@ -319,5 +320,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_maphong;
         private System.Windows.Forms.TextBox txt_tenphong;
+        private System.Windows.Forms.TextBox txt_soluong;
     }
 }

@@ -21,12 +21,13 @@ namespace QLHomeStay_App
             dgv_loai.Columns["MALOAI"].HeaderText = "Mã Loại";
             dgv_loai.Columns["TENLOAI"].HeaderText = "Tên loại";
             dgv_loai.Columns["GIAPH"].HeaderText = "Giá phòng";
+           
 
         }
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            if (txt_maloai.Text.Trim() == string.Empty || txt_tenloai.Text.Trim() == string.Empty)
+            if (txt_maloai.Text.Trim() == string.Empty || txt_tenloai.Text.Trim() == string.Empty || txt_giaphong.Text.Trim() == string.Empty)
                 MessageBox.Show("Vui lòng điền đủ thông tin");
             else
             {
