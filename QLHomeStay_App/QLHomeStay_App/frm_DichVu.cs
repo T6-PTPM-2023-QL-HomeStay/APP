@@ -91,7 +91,7 @@ namespace QLHomeStay_App.Resources
             {
                 DICHVU p = new DICHVU
                 {
-                    MADV = txt_madv.Text.Trim(),
+                    MADV = txt_madv.Text,
                     TENDV = txt_tendv.Text,
                     MAPHONG =cbo_phong.SelectedIndex.ToString(),
                     
