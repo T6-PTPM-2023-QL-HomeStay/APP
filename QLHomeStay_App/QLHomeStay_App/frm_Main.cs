@@ -68,7 +68,8 @@ namespace QLHomeStay_App
 
         private void btn_QLTK_Click(object sender, EventArgs e)
         {
-
+            frm_ThongKe frm_ThongKe = new frm_ThongKe();
+            frm_ThongKe.ShowDialog();
         }
     }
 }
