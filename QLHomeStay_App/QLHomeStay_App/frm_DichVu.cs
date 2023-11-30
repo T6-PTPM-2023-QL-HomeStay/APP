@@ -50,7 +50,7 @@ namespace QLHomeStay_App.Resources
                         MAPHONG = cbo_phong.SelectedItem.ToString(),
                         
                     };
-                    if (dICHVU.themNhanPhong(p))
+                    if (dICHVU.themDichVu(p))
                     {
                         MessageBox.Show("Thêm thành công!");
                         dgv_dv.DataSource = dICHVU.ConvertDICHVUsToDataTable();
@@ -71,7 +71,7 @@ namespace QLHomeStay_App.Resources
             DialogResult d = MessageBox.Show("Bạn có chắc muốn Xóa?", "Xác nhận", MessageBoxButtons.YesNo);
             if (d == DialogResult.Yes)
             {
-                if (dICHVU.xoaNhanPhong(maNP))
+                if (dICHVU.xoaDichVu(maNP))
                     MessageBox.Show("Xóa thành công!");
                 else
                     MessageBox.Show("Xóa thất bại!");
@@ -96,11 +96,11 @@ namespace QLHomeStay_App.Resources
                     MAPHONG =cbo_phong.SelectedIndex.ToString(),
                     
                 };
-                if (dICHVU.suaNhanPhong(p))
+                if (dICHVU.suaDichVu(p))
                     MessageBox.Show("Sửa thành công!");
                 else
                     MessageBox.Show("Sửa thất bại!");
-                dgv_dv.DataSource = dICHVU.ConvertDICHVUsToDataTable();
+                dgv_dv.DataSource = dICHVU.GetDICHVUs();
             }
         }
     }

@@ -44,7 +44,7 @@ namespace DAL
 
         
 
-        public bool themNhanPhong(DICHVU np)
+        public bool themDichVu(DICHVU np)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace DAL
             }
         }
 
-        public bool xoaNhanPhong(string maDV)
+        public bool xoaDichVu(string maDV)
         {
             try
             {
@@ -73,7 +73,7 @@ namespace DAL
             }
         }
 
-        public bool suaNhanPhong(DICHVU p)
+        public bool suaDichVu(DICHVU p)
         {
             try
             {
