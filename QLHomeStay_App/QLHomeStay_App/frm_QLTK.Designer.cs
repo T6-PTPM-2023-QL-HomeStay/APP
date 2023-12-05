@@ -53,6 +53,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tabNV.SuspendLayout();
             this.tabSearchNV.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -156,6 +157,7 @@
             // tabSearchNV
             // 
             this.tabSearchNV.BackColor = System.Drawing.Color.White;
+            this.tabSearchNV.Controls.Add(this.guna2Button1);
             this.tabSearchNV.Controls.Add(this.groupBox2);
             this.tabSearchNV.Controls.Add(this.groupBox1);
             this.tabSearchNV.Controls.Add(this.label16);
@@ -327,6 +329,24 @@
             this.Column5.ReadOnly = true;
             this.Column5.Width = 125;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Image = global::QLHomeStay_App.Properties.Resources.search1;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2Button1.Location = new System.Drawing.Point(1397, 73);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(60, 36);
+            this.guna2Button1.TabIndex = 146;
+            // 
             // frm_QLTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,5 +393,6 @@
         private System.Windows.Forms.TextBox txt_tendangnhap;
         private System.Windows.Forms.TextBox txt_matk;
         private System.Windows.Forms.ComboBox cbo_quyen;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
