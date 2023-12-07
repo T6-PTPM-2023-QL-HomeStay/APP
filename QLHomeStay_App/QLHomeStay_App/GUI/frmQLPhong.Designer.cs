@@ -31,8 +31,17 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txt_soluong = new System.Windows.Forms.TextBox();
             this.txt_tenphong = new System.Windows.Forms.TextBox();
             this.txt_maphong = new System.Windows.Forms.TextBox();
@@ -40,6 +49,7 @@
             this.btn_khu = new System.Windows.Forms.Button();
             this.cbo_loai = new System.Windows.Forms.ComboBox();
             this.cbo_khu = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -47,24 +57,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.guna2Panel3.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
-            this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -120,6 +120,112 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.guna2Button5);
+            this.guna2Panel3.Controls.Add(this.guna2Button4);
+            this.guna2Panel3.Location = new System.Drawing.Point(51, 616);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(535, 85);
+            this.guna2Panel3.TabIndex = 173;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button5.Image = global::QLHomeStay_App.Properties.Resources.hotel__2_;
+            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button5.Location = new System.Drawing.Point(321, 2);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(215, 80);
+            this.guna2Button5.TabIndex = 172;
+            this.guna2Button5.Text = "Trả phòng";
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Image = global::QLHomeStay_App.Properties.Resources.hotel__1_;
+            this.guna2Button4.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button4.Location = new System.Drawing.Point(3, 2);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(182, 80);
+            this.guna2Button4.TabIndex = 173;
+            this.guna2Button4.Text = "Nhận phòng";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.btn_sua);
+            this.guna2Panel2.Controls.Add(this.btn_xoa);
+            this.guna2Panel2.Controls.Add(this.btn_them);
+            this.guna2Panel2.Location = new System.Drawing.Point(51, 523);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(536, 95);
+            this.guna2Panel2.TabIndex = 172;
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_sua.FillColor = System.Drawing.Color.Transparent;
+            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_sua.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_sua.Image = global::QLHomeStay_App.Properties.Resources.refresh;
+            this.btn_sua.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_sua.Location = new System.Drawing.Point(383, 7);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(101, 80);
+            this.btn_sua.TabIndex = 163;
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_xoa.FillColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.Image = global::QLHomeStay_App.Properties.Resources.remove;
+            this.btn_xoa.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_xoa.Location = new System.Drawing.Point(224, 7);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(101, 80);
+            this.btn_xoa.TabIndex = 164;
+            // 
+            // btn_them
+            // 
+            this.btn_them.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_them.FillColor = System.Drawing.Color.Transparent;
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_them.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_them.Image = global::QLHomeStay_App.Properties.Resources.checked3;
+            this.btn_them.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_them.Location = new System.Drawing.Point(53, 7);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(101, 80);
+            this.btn_them.TabIndex = 165;
+            // 
             // guna2HtmlLabel2
             // 
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
@@ -140,6 +246,26 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(321, 76);
             this.guna2HtmlLabel1.TabIndex = 136;
             this.guna2HtmlLabel1.Text = "HOMESTAY";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = global::QLHomeStay_App.Properties.Resources.review;
+            this.pictureBox1.Location = new System.Drawing.Point(32, 37);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 156);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(226, 461);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(317, 27);
+            this.textBox1.TabIndex = 133;
             // 
             // txt_soluong
             // 
@@ -197,6 +323,17 @@
             this.cbo_khu.Name = "cbo_khu";
             this.cbo_khu.Size = new System.Drawing.Size(317, 28);
             this.cbo_khu.TabIndex = 130;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.Location = new System.Drawing.Point(43, 463);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(103, 21);
+            this.label5.TabIndex = 128;
+            this.label5.Text = "Trạng thái:";
             // 
             // label4
             // 
@@ -275,143 +412,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(665, 691);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(43, 463);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 21);
-            this.label5.TabIndex = 128;
-            this.label5.Text = "Trạng thái:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(226, 461);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 27);
-            this.textBox1.TabIndex = 133;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.btn_sua);
-            this.guna2Panel2.Controls.Add(this.btn_xoa);
-            this.guna2Panel2.Controls.Add(this.btn_them);
-            this.guna2Panel2.Location = new System.Drawing.Point(51, 523);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(536, 95);
-            this.guna2Panel2.TabIndex = 172;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.guna2Button5);
-            this.guna2Panel3.Controls.Add(this.guna2Button4);
-            this.guna2Panel3.Location = new System.Drawing.Point(51, 616);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(535, 85);
-            this.guna2Panel3.TabIndex = 173;
-            // 
-            // guna2Button5
-            // 
-            this.guna2Button5.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button5.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Image = global::QLHomeStay_App.Properties.Resources.hotel__2_;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button5.Location = new System.Drawing.Point(321, 2);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(215, 80);
-            this.guna2Button5.TabIndex = 172;
-            this.guna2Button5.Text = "Trả phòng";
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.Image = global::QLHomeStay_App.Properties.Resources.hotel__1_;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button4.Location = new System.Drawing.Point(3, 2);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(182, 80);
-            this.guna2Button4.TabIndex = 173;
-            this.guna2Button4.Text = "Nhận phòng";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::QLHomeStay_App.Properties.Resources.review;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 156);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_sua
-            // 
-            this.btn_sua.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_sua.FillColor = System.Drawing.Color.Transparent;
-            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_sua.Image = global::QLHomeStay_App.Properties.Resources.refresh;
-            this.btn_sua.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_sua.Location = new System.Drawing.Point(383, 7);
-            this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(101, 80);
-            this.btn_sua.TabIndex = 163;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_xoa.FillColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.Image = global::QLHomeStay_App.Properties.Resources.remove;
-            this.btn_xoa.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_xoa.Location = new System.Drawing.Point(224, 7);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(101, 80);
-            this.btn_xoa.TabIndex = 164;
-            // 
-            // btn_them
-            // 
-            this.btn_them.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_them.FillColor = System.Drawing.Color.Transparent;
-            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_them.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_them.Image = global::QLHomeStay_App.Properties.Resources.checked3;
-            this.btn_them.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_them.Location = new System.Drawing.Point(53, 7);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(101, 80);
-            this.btn_them.TabIndex = 165;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // frmQLPhong
             // 
@@ -425,11 +426,11 @@
             this.guna2GroupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.guna2Panel3.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

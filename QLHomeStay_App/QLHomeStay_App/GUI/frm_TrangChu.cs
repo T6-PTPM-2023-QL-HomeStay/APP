@@ -51,28 +51,16 @@ namespace QLHomeStay_App.GUI
             openChildForm(phong);
         }
 
-        private void btnQLKM_Click(object sender, EventArgs e)
-        {
-            frmQLKM km = new frmQLKM();
-            openChildForm(km);
-        }
-
         private void btnQLDV_Click(object sender, EventArgs e)
         {
             frmQLDV dv = new frmQLDV();
             openChildForm(dv);
         }
 
-        private void btnQLDG_Click(object sender, EventArgs e)
-        {
-            frmQLDG dg = new frmQLDG();
-            openChildForm(dg);
-        }
-
         private void btnQLTK_Click(object sender, EventArgs e)
         {
-            frmQLTK tk = new frmQLTK();
-            openChildForm(tk);
+            //frmQLTK tk = new frmQLTK();
+           // openChildForm(tk);
         }
 
         private void btnQLHD_Click(object sender, EventArgs e)

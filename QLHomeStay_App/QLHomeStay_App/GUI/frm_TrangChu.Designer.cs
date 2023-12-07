@@ -34,9 +34,7 @@
             this.btnQLPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnQLDV = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLDG = new Guna.UI2.WinForms.Guna2Button();
             this.btnQLHD = new Guna.UI2.WinForms.Guna2Button();
-            this.btnQLKM = new Guna.UI2.WinForms.Guna2Button();
             this.btnQLTK = new Guna.UI2.WinForms.Guna2Button();
             this.btn_qlnv = new Guna.UI2.WinForms.Guna2Button();
             this.btn_qlkh = new Guna.UI2.WinForms.Guna2Button();
@@ -66,9 +64,7 @@
             this.guna2Panel3.Controls.Add(this.btnQLPhong);
             this.guna2Panel3.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel3.Controls.Add(this.btnQLDV);
-            this.guna2Panel3.Controls.Add(this.btnQLDG);
             this.guna2Panel3.Controls.Add(this.btnQLHD);
-            this.guna2Panel3.Controls.Add(this.btnQLKM);
             this.guna2Panel3.Controls.Add(this.btnQLTK);
             this.guna2Panel3.Controls.Add(this.btn_qlnv);
             this.guna2Panel3.Controls.Add(this.btn_qlkh);
@@ -142,27 +138,6 @@
             this.btnQLDV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnQLDV.Click += new System.EventHandler(this.btnQLDV_Click);
             // 
-            // btnQLDG
-            // 
-            this.btnQLDG.BackColor = System.Drawing.Color.Transparent;
-            this.btnQLDG.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQLDG.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQLDG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQLDG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQLDG.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnQLDG.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnQLDG.ForeColor = System.Drawing.Color.White;
-            this.btnQLDG.Image = global::QLHomeStay_App.Properties.Resources.customer_service;
-            this.btnQLDG.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnQLDG.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnQLDG.Location = new System.Drawing.Point(-4, 476);
-            this.btnQLDG.Name = "btnQLDG";
-            this.btnQLDG.Size = new System.Drawing.Size(307, 87);
-            this.btnQLDG.TabIndex = 1;
-            this.btnQLDG.Text = "Quản lý đánh giá";
-            this.btnQLDG.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnQLDG.Click += new System.EventHandler(this.btnQLDG_Click);
-            // 
             // btnQLHD
             // 
             this.btnQLHD.BackColor = System.Drawing.Color.Transparent;
@@ -176,34 +151,13 @@
             this.btnQLHD.Image = global::QLHomeStay_App.Properties.Resources.pay;
             this.btnQLHD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQLHD.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnQLHD.Location = new System.Drawing.Point(-1, 662);
+            this.btnQLHD.Location = new System.Drawing.Point(0, 476);
             this.btnQLHD.Name = "btnQLHD";
             this.btnQLHD.Size = new System.Drawing.Size(300, 87);
             this.btnQLHD.TabIndex = 3;
             this.btnQLHD.Text = "Quản lý Hóa đơn";
             this.btnQLHD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnQLHD.Click += new System.EventHandler(this.btnQLHD_Click);
-            // 
-            // btnQLKM
-            // 
-            this.btnQLKM.BackColor = System.Drawing.Color.Transparent;
-            this.btnQLKM.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQLKM.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQLKM.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQLKM.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQLKM.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnQLKM.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnQLKM.ForeColor = System.Drawing.Color.White;
-            this.btnQLKM.Image = global::QLHomeStay_App.Properties.Resources.tag;
-            this.btnQLKM.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnQLKM.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnQLKM.Location = new System.Drawing.Point(-1, 569);
-            this.btnQLKM.Name = "btnQLKM";
-            this.btnQLKM.Size = new System.Drawing.Size(300, 87);
-            this.btnQLKM.TabIndex = 3;
-            this.btnQLKM.Text = "Quản lý Khuyến mãi";
-            this.btnQLKM.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnQLKM.Click += new System.EventHandler(this.btnQLKM_Click);
             // 
             // btnQLTK
             // 
@@ -218,7 +172,7 @@
             this.btnQLTK.Image = global::QLHomeStay_App.Properties.Resources.growth;
             this.btnQLTK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQLTK.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnQLTK.Location = new System.Drawing.Point(-1, 755);
+            this.btnQLTK.Location = new System.Drawing.Point(0, 569);
             this.btnQLTK.Name = "btnQLTK";
             this.btnQLTK.Size = new System.Drawing.Size(299, 87);
             this.btnQLTK.TabIndex = 3;
@@ -327,8 +281,6 @@
         private Guna.UI2.WinForms.Guna2Button btn_qlkh;
         private Guna.UI2.WinForms.Guna2Button btnQLPhong;
         private Guna.UI2.WinForms.Guna2Button btnQLDV;
-        private Guna.UI2.WinForms.Guna2Button btnQLDG;
-        private Guna.UI2.WinForms.Guna2Button btnQLKM;
         private Guna.UI2.WinForms.Guna2Button btnQLTK;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;

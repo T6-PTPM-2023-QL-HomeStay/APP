@@ -242,17 +242,13 @@ D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\DevExpress.XtraP
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\DevExpress.XtraDiagram.v22.2.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\DevExpress.Diagram.v22.2.Core.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.csproj.AssemblyReference.cache
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_CTKM.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_LoaiPhong.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_QLTK.resources
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLDG.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLDV.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLHD.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLKH.resources
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLKM.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLNV.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLPhong.resources
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frmQLTK.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frm_DangNhap.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.frm_Khu.resources
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.frm_TrangChu.resources
@@ -313,3 +309,4 @@ D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu.UI.WinFor
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu.UI.WinForms.ToggleSwitch.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu_UI_v1.5.3.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.exe.config
+D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.XtraReport1.resources

@@ -16,92 +16,50 @@ namespace DAL
             return dichVu.ToList();
         }
 
-        public DataTable ConvertDICHVUsToDataTable()
-        {
-            List<DVu> dichVus = GetDICHVUs();
-
-
-            DataTable dataTable = new DataTable();
-
-            
-            foreach (var property in typeof(DVu).GetProperties())
-            {
-                dataTable.Columns.Add(property.Name, property.PropertyType);
-            }
-            foreach (var dichvu in dichVus)
-            {
-                DataRow row = dataTable.NewRow();
-                foreach (var property in typeof(DVu).GetProperties())
-                {
-                    row[property.Name] = property.GetValue(dichvu);
-                }
-
-                dataTable.Rows.Add(row);
-            }
-
-            return dataTable;
-        }
-
-        
-
-        public bool themDichVu(DVu np)
+        public bool insertDV(int madv, string tendv,float dg)
         {
             try
             {
-                db.DVus.InsertOnSubmit(np);
+                DVu dv = new DVu { MADV = madv, TENDV = tendv,DONGIA=dg };
+                db.DVus.InsertOnSubmit(dv);
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
 
-        public bool xoaDichVu(int maDV)
+        public bool updateDV(int map, string tendv,float dg)
         {
             try
             {
-                DVu dICHVU = db.DVus.Where(p => p.MADV == maDV).FirstOrDefault();
-                db.DVus.DeleteOnSubmit(dICHVU);
+                DVu dVu = db.DVus.Where(tk => tk.MADV == map).FirstOrDefault();
+                dVu.TENDV = tendv;
+                dVu.DONGIA = dg;
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
 
-        public bool suaDichVu(DVu p)
+        public bool xoaDV(int map)
         {
             try
             {
-                DVu _dv = db.DVus.Where(ph => ph.MADV == p.MADV).FirstOrDefault();
-                _dv.TENDV = p.TENDV;
-                _dv.MADV = p.MADV;
+                DVu dVu = db.DVus.Where(tk => tk.MADV == map).FirstOrDefault();
+                db.DVus.DeleteOnSubmit(dVu);
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
-        }
-
-        public bool checkPrimaryKey(int ma)
-        {
-            List<DVu> dICHVUs = db.DVus.Where(p => p.MADV == ma).ToList();
-            if (dICHVUs.Count > 0)
-                return true;
-            return false;
-        }
-
-        public List<int> loadPhong()
-        {
-            var data = from entity in db.DVus
-                       select entity.MADV;
-            return data.ToList();
         }
 
 

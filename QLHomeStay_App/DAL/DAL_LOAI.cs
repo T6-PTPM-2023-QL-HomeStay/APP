@@ -11,86 +11,57 @@ namespace DAL
     {
         QuanLyHomeStayDataContext db = new QuanLyHomeStayDataContext();
 
-        public List<LOAIPHONG> GetLOAIPHONGs()
+        public List<LOAIPHONG> getAllLoaiPhong()
         {
-            var LOAIPHONG = from k in db.LOAIPHONGs select k;
-            return LOAIPHONG.ToList();
+            return (from tk in db.LOAIPHONGs select tk).ToList();
         }
-        public DataTable ConvertLOAIPHONGsToDataTable()
-        {
-            List<LOAIPHONG> LOAIPHONGs = GetLOAIPHONGs();
 
+       
 
-            DataTable dataTable = new DataTable();
-
-
-            foreach (var property in typeof(LOAIPHONG).GetProperties())
-            {
-                dataTable.Columns.Add(property.Name, property.PropertyType);
-            }
-            foreach (var LOAIPHONG in LOAIPHONGs)
-            {
-                DataRow row = dataTable.NewRow();
-                foreach (var property in typeof(LOAIPHONG).GetProperties())
-                {
-                    row[property.Name] = property.GetValue(LOAIPHONG);
-                }
-
-                dataTable.Rows.Add(row);
-            }
-
-            return dataTable;
-        }
-        public bool themLOAIPHONG(LOAIPHONG np)
+        public bool insertLoaiPhong(string ma, string ten, float gb)
         {
             try
             {
-                db.LOAIPHONGs.InsertOnSubmit(np);
+                LOAIPHONG lOAIPHONG = new LOAIPHONG { MALOAI = ma, TENLOAI = ten, GIAPH = gb, };
+                db.LOAIPHONGs.InsertOnSubmit(lOAIPHONG);
                 db.SubmitChanges();
                 return true;
             }
-            catch
-            {
-                return false;
-            }
-        }
-        public bool xoaLOAIPHONG(string maLOAIPHONG)
-        {
-            try
-            {
-                LOAIPHONG LOAIPHONG = db.LOAIPHONGs.Where(p => p.MALOAI == maLOAIPHONG).FirstOrDefault();
-                db.LOAIPHONGs.DeleteOnSubmit(LOAIPHONG);
-                db.SubmitChanges();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-        public bool suaLoai(LOAIPHONG p)
-        {
-            try
-            {
-                LOAIPHONG _dv = db.LOAIPHONGs.Where(ph => ph.MALOAI == p.MALOAI).FirstOrDefault();
-                _dv.TENLOAI = p.TENLOAI;
-                _dv.GIAPH = p.GIAPH;
-
-                db.SubmitChanges();
-                return true;
-            }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
 
-        public bool checkPrimaryKey(string ma)
+        public bool updateLoaiPhong(string ma, string ten, float gb)
         {
-            List<LOAIPHONG> LOAIPHONGs = db.LOAIPHONGs.Where(p => p.MALOAI == ma).ToList();
-            if (LOAIPHONGs.Count > 0)
+            try
+            {
+                LOAIPHONG _taiKhoan = db.LOAIPHONGs.Where(tk => tk.MALOAI == ma).FirstOrDefault();
+                _taiKhoan.TENLOAI = ten;
+                _taiKhoan.GIAPH = gb;
+                db.SubmitChanges();
                 return true;
-            return false;
+            }
+            catch (Exception _ex)
+            {
+                return false;
+            }
+        }
+
+        public bool xoaLoaiPhong(string ma)
+        {
+            try
+            {
+                LOAIPHONG _taiKhoan = db.LOAIPHONGs.Where(tk => tk.MALOAI == ma).FirstOrDefault();
+                db.LOAIPHONGs.DeleteOnSubmit(_taiKhoan);
+                db.SubmitChanges();
+                return true;
+            }
+            catch (Exception _ex)
+            {
+                return false;
+            }
         }
 
         public bool search(string tenLOAIPHONG)

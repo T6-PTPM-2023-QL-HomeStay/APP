@@ -18,22 +18,21 @@ namespace QLHomeStay_App.GUI
             InitializeComponent();
         }
 
-        private void btn_kh_Click(object sender, EventArgs e)
+        private void hOADONBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            frmQLKH kh = new frmQLKH();
-            kh.ShowDialog();
+            this.Validate();
+            this.hOADONBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.qL_KH);
+
         }
 
-        private void btn_dv_Click(object sender, EventArgs e)
+        private void frmQLHD_Load(object sender, EventArgs e)
         {
-            frmQLDV frmQLDV = new frmQLDV();
-            frmQLDV.ShowDialog();
-        }
+            // TODO: This line of code loads data into the 'qL_KH.CTHD' table. You can move, or remove it, as needed.
+            this.cTHDTableAdapter.Fill(this.qL_KH.CTHD);
+            // TODO: This line of code loads data into the 'qL_KH.HOADON' table. You can move, or remove it, as needed.
+            this.hOADONTableAdapter.Fill(this.qL_KH.HOADON);
 
-        private void btn_phong_Click(object sender, EventArgs e)
-        {
-            frmQLPhong phong = new frmQLPhong();
-            phong.ShowDialog();
         }
     }
 }
