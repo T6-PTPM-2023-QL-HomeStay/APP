@@ -1,7 +1,6 @@
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.dll.config
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.dll
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\DAL.pdb
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.dll
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.pdb
