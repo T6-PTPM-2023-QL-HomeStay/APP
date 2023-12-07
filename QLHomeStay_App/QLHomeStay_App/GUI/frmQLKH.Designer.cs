@@ -28,35 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQLKH));
+            System.Windows.Forms.Label mAKHLabel;
+            System.Windows.Forms.Label hOTENLabel;
+            System.Windows.Forms.Label gIOITINHLabel;
+            System.Windows.Forms.Label nGAYSINHLabel;
+            System.Windows.Forms.Label qUEQUANLabel;
+            System.Windows.Forms.Label sDTLabel;
+            System.Windows.Forms.Label cCCDLabel;
+            System.Windows.Forms.Label mATKLabel;
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtSearchNV = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_cccd = new System.Windows.Forms.TextBox();
-            this.txt_sdt = new System.Windows.Forms.TextBox();
-            this.yxy_gioitinh = new System.Windows.Forms.TextBox();
-            this.txt_hoten = new System.Windows.Forms.TextBox();
-            this.txt_manv = new System.Windows.Forms.TextBox();
-            this.txt_quequan = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dgv_nhanvien = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbo_tk = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_tk = new System.Windows.Forms.Button();
             this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
             this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.btn_tk = new System.Windows.Forms.Button();
+            this.qL_KH = new QLHomeStay_App.QL_KH();
+            this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kHACHHANGTableAdapter = new QLHomeStay_App.QL_KHTableAdapters.KHACHHANGTableAdapter();
+            this.tableAdapterManager = new QLHomeStay_App.QL_KHTableAdapters.TableAdapterManager();
+            this.kHACHHANGBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.kHACHHANGBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.kHACHHANGGridControl = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.mAKHTextBox = new System.Windows.Forms.TextBox();
+            this.hOTENTextBox = new System.Windows.Forms.TextBox();
+            this.gIOITINHTextBox = new System.Windows.Forms.TextBox();
+            this.nGAYSINHDateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.qUEQUANTextBox = new System.Windows.Forms.TextBox();
+            this.sDTTextBox = new System.Windows.Forms.TextBox();
+            this.cCCDTextBox = new System.Windows.Forms.TextBox();
+            this.mATKComboBox = new System.Windows.Forms.ComboBox();
+            mAKHLabel = new System.Windows.Forms.Label();
+            hOTENLabel = new System.Windows.Forms.Label();
+            gIOITINHLabel = new System.Windows.Forms.Label();
+            nGAYSINHLabel = new System.Windows.Forms.Label();
+            qUEQUANLabel = new System.Windows.Forms.Label();
+            sDTLabel = new System.Windows.Forms.Label();
+            cCCDLabel = new System.Windows.Forms.Label();
+            mATKLabel = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_KH)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingNavigator)).BeginInit();
+            this.kHACHHANGBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGGridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -76,193 +109,10 @@
             this.guna2Button1.Size = new System.Drawing.Size(60, 48);
             this.guna2Button1.TabIndex = 79;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label16.Location = new System.Drawing.Point(49, 47);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(106, 25);
-            this.label16.TabIndex = 78;
-            this.label16.Text = "Tìm kiếm:";
-            // 
-            // txtSearchNV
-            // 
-            this.txtSearchNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSearchNV.Location = new System.Drawing.Point(179, 44);
-            this.txtSearchNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSearchNV.Name = "txtSearchNV";
-            this.txtSearchNV.Size = new System.Drawing.Size(291, 30);
-            this.txtSearchNV.TabIndex = 77;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label4.Location = new System.Drawing.Point(78, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 26);
-            this.label4.TabIndex = 72;
-            this.label4.Text = "Mã KH:";
-            // 
-            // txt_cccd
-            // 
-            this.txt_cccd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_cccd.Location = new System.Drawing.Point(179, 314);
-            this.txt_cccd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_cccd.Name = "txt_cccd";
-            this.txt_cccd.Size = new System.Drawing.Size(291, 32);
-            this.txt_cccd.TabIndex = 71;
-            // 
-            // txt_sdt
-            // 
-            this.txt_sdt.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_sdt.Location = new System.Drawing.Point(179, 242);
-            this.txt_sdt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(291, 32);
-            this.txt_sdt.TabIndex = 71;
-            // 
-            // yxy_gioitinh
-            // 
-            this.yxy_gioitinh.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.yxy_gioitinh.Location = new System.Drawing.Point(179, 206);
-            this.yxy_gioitinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.yxy_gioitinh.Name = "yxy_gioitinh";
-            this.yxy_gioitinh.Size = new System.Drawing.Size(291, 32);
-            this.yxy_gioitinh.TabIndex = 71;
-            // 
-            // txt_hoten
-            // 
-            this.txt_hoten.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_hoten.Location = new System.Drawing.Point(179, 170);
-            this.txt_hoten.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_hoten.Name = "txt_hoten";
-            this.txt_hoten.Size = new System.Drawing.Size(291, 32);
-            this.txt_hoten.TabIndex = 71;
-            // 
-            // txt_manv
-            // 
-            this.txt_manv.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_manv.Location = new System.Drawing.Point(179, 134);
-            this.txt_manv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_manv.Name = "txt_manv";
-            this.txt_manv.Size = new System.Drawing.Size(291, 32);
-            this.txt_manv.TabIndex = 71;
-            // 
-            // txt_quequan
-            // 
-            this.txt_quequan.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txt_quequan.Location = new System.Drawing.Point(179, 278);
-            this.txt_quequan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_quequan.Name = "txt_quequan";
-            this.txt_quequan.Size = new System.Drawing.Size(291, 32);
-            this.txt_quequan.TabIndex = 71;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label6.Location = new System.Drawing.Point(61, 206);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 26);
-            this.label6.TabIndex = 70;
-            this.label6.Text = "Giới tính:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label7.Location = new System.Drawing.Point(79, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 26);
-            this.label7.TabIndex = 68;
-            this.label7.Text = "Họ tên:";
-            // 
-            // dgv_nhanvien
-            // 
-            this.dgv_nhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_nhanvien.Location = new System.Drawing.Point(23, 34);
-            this.dgv_nhanvien.Name = "dgv_nhanvien";
-            this.dgv_nhanvien.RowHeadersWidth = 51;
-            this.dgv_nhanvien.RowTemplate.Height = 24;
-            this.dgv_nhanvien.Size = new System.Drawing.Size(719, 556);
-            this.dgv_nhanvien.TabIndex = 0;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.dgv_nhanvien);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.Location = new System.Drawing.Point(566, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(777, 713);
-            this.groupBox1.TabIndex = 65;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách khách hàng";
-            // 
-            // cbo_tk
-            // 
-            this.cbo_tk.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbo_tk.FormattingEnabled = true;
-            this.cbo_tk.Location = new System.Drawing.Point(179, 350);
-            this.cbo_tk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbo_tk.Name = "cbo_tk";
-            this.cbo_tk.Size = new System.Drawing.Size(291, 30);
-            this.cbo_tk.TabIndex = 67;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label3.Location = new System.Drawing.Point(82, 352);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 26);
-            this.label3.TabIndex = 66;
-            this.label3.Text = "Mã TK:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label2.Location = new System.Drawing.Point(92, 314);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 26);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "CCCD:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label1.Location = new System.Drawing.Point(52, 278);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 26);
-            this.label1.TabIndex = 63;
-            this.label1.Text = "Quê quán:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label13.Location = new System.Drawing.Point(105, 246);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(55, 26);
-            this.label13.TabIndex = 63;
-            this.label13.Text = "SDT:";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2Panel1.Controls.Add(this.groupBox1);
+            this.guna2Panel1.Controls.Add(this.kHACHHANGGridControl);
             this.guna2Panel1.Controls.Add(this.groupBox2);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
@@ -272,27 +122,27 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(mAKHLabel);
+            this.groupBox2.Controls.Add(this.mAKHTextBox);
+            this.groupBox2.Controls.Add(hOTENLabel);
+            this.groupBox2.Controls.Add(this.hOTENTextBox);
+            this.groupBox2.Controls.Add(gIOITINHLabel);
+            this.groupBox2.Controls.Add(this.gIOITINHTextBox);
+            this.groupBox2.Controls.Add(nGAYSINHLabel);
+            this.groupBox2.Controls.Add(this.nGAYSINHDateEdit);
+            this.groupBox2.Controls.Add(qUEQUANLabel);
+            this.groupBox2.Controls.Add(this.qUEQUANTextBox);
+            this.groupBox2.Controls.Add(sDTLabel);
+            this.groupBox2.Controls.Add(this.sDTTextBox);
+            this.groupBox2.Controls.Add(cCCDLabel);
+            this.groupBox2.Controls.Add(this.cCCDTextBox);
+            this.groupBox2.Controls.Add(mATKLabel);
+            this.groupBox2.Controls.Add(this.mATKComboBox);
             this.groupBox2.Controls.Add(this.btn_sua);
             this.groupBox2.Controls.Add(this.btn_xoa);
             this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Controls.Add(this.btn_tk);
             this.groupBox2.Controls.Add(this.guna2Button1);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.txtSearchNV);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.txt_cccd);
-            this.groupBox2.Controls.Add(this.txt_sdt);
-            this.groupBox2.Controls.Add(this.yxy_gioitinh);
-            this.groupBox2.Controls.Add(this.txt_hoten);
-            this.groupBox2.Controls.Add(this.txt_manv);
-            this.groupBox2.Controls.Add(this.txt_quequan);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.cbo_tk);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
@@ -301,16 +151,6 @@
             this.groupBox2.TabIndex = 64;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
-            // 
-            // btn_tk
-            // 
-            this.btn_tk.Location = new System.Drawing.Point(476, 351);
-            this.btn_tk.Name = "btn_tk";
-            this.btn_tk.Size = new System.Drawing.Size(47, 30);
-            this.btn_tk.TabIndex = 78;
-            this.btn_tk.Text = "+";
-            this.btn_tk.UseVisualStyleBackColor = true;
-            this.btn_tk.Click += new System.EventHandler(this.btn_tk_Click);
             // 
             // btn_sua
             // 
@@ -363,49 +203,394 @@
             this.btn_them.Size = new System.Drawing.Size(101, 80);
             this.btn_them.TabIndex = 165;
             // 
+            // btn_tk
+            // 
+            this.btn_tk.Location = new System.Drawing.Point(476, 351);
+            this.btn_tk.Name = "btn_tk";
+            this.btn_tk.Size = new System.Drawing.Size(47, 30);
+            this.btn_tk.TabIndex = 78;
+            this.btn_tk.Text = "+";
+            this.btn_tk.UseVisualStyleBackColor = true;
+            this.btn_tk.Click += new System.EventHandler(this.btn_tk_Click);
+            // 
+            // qL_KH
+            // 
+            this.qL_KH.DataSetName = "QL_KH";
+            this.qL_KH.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // kHACHHANGBindingSource
+            // 
+            this.kHACHHANGBindingSource.DataMember = "KHACHHANG";
+            this.kHACHHANGBindingSource.DataSource = this.qL_KH;
+            // 
+            // kHACHHANGTableAdapter
+            // 
+            this.kHACHHANGTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CTDichVuTableAdapter = null;
+            this.tableAdapterManager.CTHDTableAdapter = null;
+            this.tableAdapterManager.CTKHUYENMAITableAdapter = null;
+            this.tableAdapterManager.DANHGIATableAdapter = null;
+            this.tableAdapterManager.DVuTableAdapter = null;
+            this.tableAdapterManager.HOADONTableAdapter = null;
+            this.tableAdapterManager.KHACHHANGTableAdapter = this.kHACHHANGTableAdapter;
+            this.tableAdapterManager.KHUTableAdapter = null;
+            this.tableAdapterManager.KHUYENMAITableAdapter = null;
+            this.tableAdapterManager.LOAIPHONGTableAdapter = null;
+            this.tableAdapterManager.NHANVIENTableAdapter = null;
+            this.tableAdapterManager.PHONGTableAdapter = null;
+            this.tableAdapterManager.TAIKHOANTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = QLHomeStay_App.QL_KHTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // kHACHHANGBindingNavigator
+            // 
+            this.kHACHHANGBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.kHACHHANGBindingNavigator.BindingSource = this.kHACHHANGBindingSource;
+            this.kHACHHANGBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.kHACHHANGBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.kHACHHANGBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.kHACHHANGBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem,
+            this.kHACHHANGBindingNavigatorSaveItem});
+            this.kHACHHANGBindingNavigator.Location = new System.Drawing.Point(0, 0);
+            this.kHACHHANGBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.kHACHHANGBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.kHACHHANGBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.kHACHHANGBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.kHACHHANGBindingNavigator.Name = "kHACHHANGBindingNavigator";
+            this.kHACHHANGBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.kHACHHANGBindingNavigator.Size = new System.Drawing.Size(1343, 27);
+            this.kHACHHANGBindingNavigator.TabIndex = 2;
+            this.kHACHHANGBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // kHACHHANGBindingNavigatorSaveItem
+            // 
+            this.kHACHHANGBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.kHACHHANGBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("kHACHHANGBindingNavigatorSaveItem.Image")));
+            this.kHACHHANGBindingNavigatorSaveItem.Name = "kHACHHANGBindingNavigatorSaveItem";
+            this.kHACHHANGBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.kHACHHANGBindingNavigatorSaveItem.Text = "Save Data";
+            this.kHACHHANGBindingNavigatorSaveItem.Click += new System.EventHandler(this.kHACHHANGBindingNavigatorSaveItem_Click);
+            // 
+            // kHACHHANGGridControl
+            // 
+            this.kHACHHANGGridControl.DataSource = this.kHACHHANGBindingSource;
+            this.kHACHHANGGridControl.Location = new System.Drawing.Point(572, 47);
+            this.kHACHHANGGridControl.MainView = this.gridView1;
+            this.kHACHHANGGridControl.Name = "kHACHHANGGridControl";
+            this.kHACHHANGGridControl.Size = new System.Drawing.Size(768, 355);
+            this.kHACHHANGGridControl.TabIndex = 64;
+            this.kHACHHANGGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.kHACHHANGGridControl;
+            this.gridView1.Name = "gridView1";
+            // 
+            // mAKHLabel
+            // 
+            mAKHLabel.AutoSize = true;
+            mAKHLabel.Location = new System.Drawing.Point(114, 103);
+            mAKHLabel.Name = "mAKHLabel";
+            mAKHLabel.Size = new System.Drawing.Size(70, 24);
+            mAKHLabel.TabIndex = 165;
+            mAKHLabel.Text = "MAKH:";
+            // 
+            // mAKHTextBox
+            // 
+            this.mAKHTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "MAKH", true));
+            this.mAKHTextBox.Location = new System.Drawing.Point(232, 100);
+            this.mAKHTextBox.Name = "mAKHTextBox";
+            this.mAKHTextBox.Size = new System.Drawing.Size(125, 28);
+            this.mAKHTextBox.TabIndex = 166;
+            // 
+            // hOTENLabel
+            // 
+            hOTENLabel.AutoSize = true;
+            hOTENLabel.Location = new System.Drawing.Point(114, 137);
+            hOTENLabel.Name = "hOTENLabel";
+            hOTENLabel.Size = new System.Drawing.Size(83, 24);
+            hOTENLabel.TabIndex = 167;
+            hOTENLabel.Text = "HOTEN:";
+            // 
+            // hOTENTextBox
+            // 
+            this.hOTENTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "HOTEN", true));
+            this.hOTENTextBox.Location = new System.Drawing.Point(232, 134);
+            this.hOTENTextBox.Name = "hOTENTextBox";
+            this.hOTENTextBox.Size = new System.Drawing.Size(125, 28);
+            this.hOTENTextBox.TabIndex = 168;
+            // 
+            // gIOITINHLabel
+            // 
+            gIOITINHLabel.AutoSize = true;
+            gIOITINHLabel.Location = new System.Drawing.Point(114, 171);
+            gIOITINHLabel.Name = "gIOITINHLabel";
+            gIOITINHLabel.Size = new System.Drawing.Size(96, 24);
+            gIOITINHLabel.TabIndex = 169;
+            gIOITINHLabel.Text = "GIOITINH:";
+            // 
+            // gIOITINHTextBox
+            // 
+            this.gIOITINHTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "GIOITINH", true));
+            this.gIOITINHTextBox.Location = new System.Drawing.Point(232, 168);
+            this.gIOITINHTextBox.Name = "gIOITINHTextBox";
+            this.gIOITINHTextBox.Size = new System.Drawing.Size(125, 28);
+            this.gIOITINHTextBox.TabIndex = 170;
+            // 
+            // nGAYSINHLabel
+            // 
+            nGAYSINHLabel.AutoSize = true;
+            nGAYSINHLabel.Location = new System.Drawing.Point(114, 202);
+            nGAYSINHLabel.Name = "nGAYSINHLabel";
+            nGAYSINHLabel.Size = new System.Drawing.Size(112, 24);
+            nGAYSINHLabel.TabIndex = 171;
+            nGAYSINHLabel.Text = "NGAYSINH:";
+            // 
+            // nGAYSINHDateEdit
+            // 
+            this.nGAYSINHDateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.kHACHHANGBindingSource, "NGAYSINH", true));
+            this.nGAYSINHDateEdit.EditValue = null;
+            this.nGAYSINHDateEdit.Location = new System.Drawing.Point(232, 199);
+            this.nGAYSINHDateEdit.Name = "nGAYSINHDateEdit";
+            this.nGAYSINHDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.nGAYSINHDateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.nGAYSINHDateEdit.Size = new System.Drawing.Size(125, 22);
+            this.nGAYSINHDateEdit.TabIndex = 172;
+            // 
+            // qUEQUANLabel
+            // 
+            qUEQUANLabel.AutoSize = true;
+            qUEQUANLabel.Location = new System.Drawing.Point(114, 235);
+            qUEQUANLabel.Name = "qUEQUANLabel";
+            qUEQUANLabel.Size = new System.Drawing.Size(111, 24);
+            qUEQUANLabel.TabIndex = 173;
+            qUEQUANLabel.Text = "QUEQUAN:";
+            // 
+            // qUEQUANTextBox
+            // 
+            this.qUEQUANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "QUEQUAN", true));
+            this.qUEQUANTextBox.Location = new System.Drawing.Point(232, 232);
+            this.qUEQUANTextBox.Name = "qUEQUANTextBox";
+            this.qUEQUANTextBox.Size = new System.Drawing.Size(125, 28);
+            this.qUEQUANTextBox.TabIndex = 174;
+            // 
+            // sDTLabel
+            // 
+            sDTLabel.AutoSize = true;
+            sDTLabel.Location = new System.Drawing.Point(114, 269);
+            sDTLabel.Name = "sDTLabel";
+            sDTLabel.Size = new System.Drawing.Size(52, 24);
+            sDTLabel.TabIndex = 175;
+            sDTLabel.Text = "SDT:";
+            // 
+            // sDTTextBox
+            // 
+            this.sDTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "SDT", true));
+            this.sDTTextBox.Location = new System.Drawing.Point(232, 266);
+            this.sDTTextBox.Name = "sDTTextBox";
+            this.sDTTextBox.Size = new System.Drawing.Size(125, 28);
+            this.sDTTextBox.TabIndex = 176;
+            // 
+            // cCCDLabel
+            // 
+            cCCDLabel.AutoSize = true;
+            cCCDLabel.Location = new System.Drawing.Point(114, 303);
+            cCCDLabel.Name = "cCCDLabel";
+            cCCDLabel.Size = new System.Drawing.Size(67, 24);
+            cCCDLabel.TabIndex = 177;
+            cCCDLabel.Text = "CCCD:";
+            // 
+            // cCCDTextBox
+            // 
+            this.cCCDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "CCCD", true));
+            this.cCCDTextBox.Location = new System.Drawing.Point(232, 300);
+            this.cCCDTextBox.Name = "cCCDTextBox";
+            this.cCCDTextBox.Size = new System.Drawing.Size(125, 28);
+            this.cCCDTextBox.TabIndex = 178;
+            // 
+            // mATKLabel
+            // 
+            mATKLabel.AutoSize = true;
+            mATKLabel.Location = new System.Drawing.Point(114, 337);
+            mATKLabel.Name = "mATKLabel";
+            mATKLabel.Size = new System.Drawing.Size(68, 24);
+            mATKLabel.TabIndex = 179;
+            mATKLabel.Text = "MATK:";
+            // 
+            // mATKComboBox
+            // 
+            this.mATKComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.kHACHHANGBindingSource, "MATK", true));
+            this.mATKComboBox.FormattingEnabled = true;
+            this.mATKComboBox.Location = new System.Drawing.Point(232, 334);
+            this.mATKComboBox.Name = "mATKComboBox";
+            this.mATKComboBox.Size = new System.Drawing.Size(125, 30);
+            this.mATKComboBox.TabIndex = 180;
+            // 
             // frmQLKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1343, 713);
+            this.Controls.Add(this.kHACHHANGBindingNavigator);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "frmQLKH";
             this.Text = "QUẢN LÝ KHÁCH HÀNG";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_nhanvien)).EndInit();
-            this.groupBox1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmQLKH_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qL_KH)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingNavigator)).EndInit();
+            this.kHACHHANGBindingNavigator.ResumeLayout(false);
+            this.kHACHHANGBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGGridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYSINHDateEdit.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtSearchNV;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_cccd;
-        private System.Windows.Forms.TextBox txt_sdt;
-        private System.Windows.Forms.TextBox yxy_gioitinh;
-        private System.Windows.Forms.TextBox txt_hoten;
-        private System.Windows.Forms.TextBox txt_manv;
-        private System.Windows.Forms.TextBox txt_quequan;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dgv_nhanvien;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbo_tk;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_tk;
         private Guna.UI2.WinForms.Guna2Button btn_sua;
         private Guna.UI2.WinForms.Guna2Button btn_xoa;
         private Guna.UI2.WinForms.Guna2Button btn_them;
+        private QL_KH qL_KH;
+        private System.Windows.Forms.BindingSource kHACHHANGBindingSource;
+        private QL_KHTableAdapters.KHACHHANGTableAdapter kHACHHANGTableAdapter;
+        private QL_KHTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator kHACHHANGBindingNavigator;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton kHACHHANGBindingNavigatorSaveItem;
+        private DevExpress.XtraGrid.GridControl kHACHHANGGridControl;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private System.Windows.Forms.TextBox mAKHTextBox;
+        private System.Windows.Forms.TextBox hOTENTextBox;
+        private System.Windows.Forms.TextBox gIOITINHTextBox;
+        private DevExpress.XtraEditors.DateEdit nGAYSINHDateEdit;
+        private System.Windows.Forms.TextBox qUEQUANTextBox;
+        private System.Windows.Forms.TextBox sDTTextBox;
+        private System.Windows.Forms.TextBox cCCDTextBox;
+        private System.Windows.Forms.ComboBox mATKComboBox;
     }
 }

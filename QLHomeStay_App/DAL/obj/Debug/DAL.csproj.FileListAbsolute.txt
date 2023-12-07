@@ -11,7 +11,4 @@ C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.cspr
 C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.dll
 C:\Users\tn080\Source\Repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.pdb
-C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\Guna.UI2.dll
-C:\Users\tn080\source\repos\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CopyComplete
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\bin\Debug\Guna.UI2.dll
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

@@ -14,7 +14,8 @@ namespace DAL
 
         public bool DangNhap(string tenDangNhap, string matKhau)
         {
-            return true;
+            List<TAIKHOAN> lstTaiKhoans = (db.TAIKHOANs.Where(tk => tk.TENDANGNHAP == tenDangNhap && tk.MATKHAU == matKhau)).ToList();
+            return lstTaiKhoans.Count < 1 ? false : true;
         }
     }
 }
