@@ -80,34 +80,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_CTDV.cs">
+    <Compile Include="GUI\frm_CTKM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_CTDV.Designer.cs">
-      <DependentUpon>frm_CTDV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_CTKM.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CTKM.Designer.cs">
+    <Compile Include="GUI\frm_CTKM.Designer.cs">
       <DependentUpon>frm_CTKM.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Khu.cs">
+    <Compile Include="GUI\frm_LoaiPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Khu.Designer.cs">
-      <DependentUpon>frm_Khu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_LoaiPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_LoaiPhong.Designer.cs">
+    <Compile Include="GUI\frm_LoaiPhong.Designer.cs">
       <DependentUpon>frm_LoaiPhong.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_QLTK.cs">
+    <Compile Include="GUI\frm_QLTK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_QLTK.Designer.cs">
+    <Compile Include="GUI\frm_QLTK.Designer.cs">
       <DependentUpon>frm_QLTK.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmQLDG.cs">
@@ -164,6 +152,12 @@
     <Compile Include="GUI\frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_Khu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_Khu.designer.cs">
+      <DependentUpon>frm_Khu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,19 +166,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_CTDV.resx">
-      <DependentUpon>frm_CTDV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CTKM.resx">
+    <EmbeddedResource Include="GUI\frm_CTKM.resx">
       <DependentUpon>frm_CTKM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Khu.resx">
-      <DependentUpon>frm_Khu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_LoaiPhong.resx">
+    <EmbeddedResource Include="GUI\frm_LoaiPhong.resx">
       <DependentUpon>frm_LoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_QLTK.resx">
+    <EmbeddedResource Include="GUI\frm_QLTK.resx">
       <DependentUpon>frm_QLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQLDG.resx">
@@ -213,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_Khu.resx">
+      <DependentUpon>frm_Khu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TrangChu.resx">
       <DependentUpon>frm_TrangChu.cs</DependentUpon>
