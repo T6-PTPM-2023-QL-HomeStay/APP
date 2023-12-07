@@ -52,7 +52,6 @@
             this.sDTTextBox = new System.Windows.Forms.TextBox();
             this.cCCDTextBox = new System.Windows.Forms.TextBox();
             this.mATKComboBox = new System.Windows.Forms.ComboBox();
-            this.btn_tk = new System.Windows.Forms.Button();
             this.kHACHHANGTableAdapter = new QLHomeStay_App.QL_KHTableAdapters.KHACHHANGTableAdapter();
             this.tableAdapterManager = new QLHomeStay_App.QL_KHTableAdapters.TableAdapterManager();
             this.kHACHHANGBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -226,7 +225,6 @@
             this.groupBox2.Controls.Add(this.cCCDTextBox);
             this.groupBox2.Controls.Add(mATKLabel);
             this.groupBox2.Controls.Add(this.mATKComboBox);
-            this.groupBox2.Controls.Add(this.btn_tk);
             this.groupBox2.Controls.Add(this.guna2Button1);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -306,16 +304,6 @@
             this.mATKComboBox.Name = "mATKComboBox";
             this.mATKComboBox.Size = new System.Drawing.Size(125, 30);
             this.mATKComboBox.TabIndex = 180;
-            // 
-            // btn_tk
-            // 
-            this.btn_tk.Location = new System.Drawing.Point(402, 337);
-            this.btn_tk.Name = "btn_tk";
-            this.btn_tk.Size = new System.Drawing.Size(47, 30);
-            this.btn_tk.TabIndex = 78;
-            this.btn_tk.Text = "+";
-            this.btn_tk.UseVisualStyleBackColor = true;
-            this.btn_tk.Click += new System.EventHandler(this.btn_tk_Click);
             // 
             // kHACHHANGTableAdapter
             // 
@@ -438,7 +426,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btn_tk;
         private QL_KH qL_KH;
         private System.Windows.Forms.BindingSource kHACHHANGBindingSource;
         private QL_KHTableAdapters.KHACHHANGTableAdapter kHACHHANGTableAdapter;

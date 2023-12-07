@@ -22,7 +22,15 @@ namespace DAL
            
 
         }
-        
+        public List<string> getMaPhong()
+        {
+            return db.PHONGs.Select(lp => lp.MAPHONG).ToList();
+
+
+
+
+        }
+
         public bool insertPhong(string map,string malp, string makhu, string tenp,int song,string trangthai)
         {
             try

@@ -19,7 +19,11 @@ namespace QLHomeStay_App.GUI
         public frmQLNV()
         {
             InitializeComponent();
-           // dgv_nhanvien.DataSource = nv.getAllNhanVien();
+            string[] t = { "Nam", "Nữ" };
+            gIOITINHComboBox.DataSource = t;
+            gIOITINHComboBox.SelectedItem = 0;
+          
+            // dgv_nhanvien.DataSource = nv.getAllNhanVien();
         }
 
         private void btn_tk_Click(object sender, EventArgs e)

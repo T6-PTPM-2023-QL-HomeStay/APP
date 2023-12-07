@@ -14,5 +14,9 @@ namespace DAL
         {
             return db.KHACHHANGs.Select(lp => lp.MAKH).ToList();
         }
+        public List<string> getMaTK()
+        {
+            return db.TAIKHOANs.Select(lp => lp.MATK).ToList();
+        }
     }
 }

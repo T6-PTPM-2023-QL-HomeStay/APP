@@ -15,7 +15,10 @@ namespace DAL
             var dichVu = from k in db.DVus select k;
             return dichVu.ToList();
         }
-
+        public List<int>getMaDV()
+        {
+            return db.DVus.Select(lp => lp.MADV).ToList();
+        }
         public bool insertDV(int madv, string tendv,float dg)
         {
             try

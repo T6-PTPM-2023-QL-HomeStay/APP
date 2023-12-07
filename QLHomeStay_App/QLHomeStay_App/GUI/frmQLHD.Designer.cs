@@ -38,35 +38,56 @@ namespace QLHomeStay_App.GUI
             this.hOADONTableAdapter = new QLHomeStay_App.QL_KHTableAdapters.HOADONTableAdapter();
             this.tableAdapterManager = new QLHomeStay_App.QL_KHTableAdapters.TableAdapterManager();
             this.cTHDTableAdapter = new QLHomeStay_App.QL_KHTableAdapters.CTHDTableAdapter();
-            this.hOADONBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.hOADONBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.cTHDBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nGAYTAODateEdit = new DevExpress.XtraEditors.DateEdit();
             this.mAKHComboBox = new System.Windows.Forms.ComboBox();
-            this.mAHDSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
-            this.hOADONGridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mAHDSpinEdit1 = new DevExpress.XtraEditors.SpinEdit();
+            this.nGAYTAODateEdit = new DevExpress.XtraEditors.DateEdit();
+            this.cTHDBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btn_CTHD = new Guna.UI2.WinForms.Guna2Button();
             nGAYTAOLabel = new System.Windows.Forms.Label();
             mAKHLabel = new System.Windows.Forms.Label();
             mAHDLabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.qL_KH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingNavigator)).BeginInit();
-            this.hOADONBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAHDSpinEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOADONGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAHDSpinEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // nGAYTAOLabel
+            // 
+            nGAYTAOLabel.AutoSize = true;
+            nGAYTAOLabel.Location = new System.Drawing.Point(73, 127);
+            nGAYTAOLabel.Name = "nGAYTAOLabel";
+            nGAYTAOLabel.Size = new System.Drawing.Size(67, 17);
+            nGAYTAOLabel.TabIndex = 4;
+            nGAYTAOLabel.Text = "Ngày Tạo";
+            // 
+            // mAKHLabel
+            // 
+            mAKHLabel.AutoSize = true;
+            mAKHLabel.Location = new System.Drawing.Point(73, 99);
+            mAKHLabel.Name = "mAKHLabel";
+            mAKHLabel.Size = new System.Drawing.Size(46, 17);
+            mAKHLabel.TabIndex = 2;
+            mAKHLabel.Text = "Mã KH";
+            // 
+            // mAHDLabel1
+            // 
+            mAHDLabel1.AutoSize = true;
+            mAHDLabel1.Location = new System.Drawing.Point(73, 66);
+            mAHDLabel1.Name = "mAHDLabel1";
+            mAHDLabel1.Size = new System.Drawing.Size(48, 17);
+            mAHDLabel1.TabIndex = 0;
+            mAHDLabel1.Text = "Mã HD";
             // 
             // qL_KH
             // 
@@ -104,82 +125,6 @@ namespace QLHomeStay_App.GUI
             // 
             this.cTHDTableAdapter.ClearBeforeFill = true;
             // 
-            // hOADONBindingNavigator
-            // 
-            this.hOADONBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.hOADONBindingNavigator.BindingSource = this.hOADONBindingSource;
-            this.hOADONBindingNavigator.CountItem = null;
-            this.hOADONBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.hOADONBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.hOADONBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.hOADONBindingNavigatorSaveItem});
-            this.hOADONBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.hOADONBindingNavigator.MoveFirstItem = null;
-            this.hOADONBindingNavigator.MoveLastItem = null;
-            this.hOADONBindingNavigator.MoveNextItem = null;
-            this.hOADONBindingNavigator.MovePreviousItem = null;
-            this.hOADONBindingNavigator.Name = "hOADONBindingNavigator";
-            this.hOADONBindingNavigator.PositionItem = null;
-            this.hOADONBindingNavigator.Size = new System.Drawing.Size(675, 27);
-            this.hOADONBindingNavigator.TabIndex = 0;
-            this.hOADONBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = global::QLHomeStay_App.Properties.Resources.plus;
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = global::QLHomeStay_App.Properties.Resources.trash_bin;
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // hOADONBindingNavigatorSaveItem
-            // 
-            this.hOADONBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.hOADONBindingNavigatorSaveItem.Image = global::QLHomeStay_App.Properties.Resources.checked2;
-            this.hOADONBindingNavigatorSaveItem.Name = "hOADONBindingNavigatorSaveItem";
-            this.hOADONBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.hOADONBindingNavigatorSaveItem.Text = "Save Data";
-            this.hOADONBindingNavigatorSaveItem.Click += new System.EventHandler(this.hOADONBindingNavigatorSaveItem_Click);
-            // 
-            // cTHDBindingSource
-            // 
-            this.cTHDBindingSource.DataMember = "FK_CTHD_HD";
-            this.cTHDBindingSource.DataSource = this.hOADONBindingSource;
-            // 
-            // nGAYTAODateEdit
-            // 
-            this.nGAYTAODateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOADONBindingSource, "NGAYTAO", true));
-            this.nGAYTAODateEdit.EditValue = null;
-            this.nGAYTAODateEdit.Location = new System.Drawing.Point(152, 124);
-            this.nGAYTAODateEdit.Name = "nGAYTAODateEdit";
-            this.nGAYTAODateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.nGAYTAODateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.nGAYTAODateEdit.Size = new System.Drawing.Size(125, 22);
-            this.nGAYTAODateEdit.TabIndex = 5;
-            // 
-            // nGAYTAOLabel
-            // 
-            nGAYTAOLabel.AutoSize = true;
-            nGAYTAOLabel.Location = new System.Drawing.Point(73, 127);
-            nGAYTAOLabel.Name = "nGAYTAOLabel";
-            nGAYTAOLabel.Size = new System.Drawing.Size(73, 17);
-            nGAYTAOLabel.TabIndex = 4;
-            nGAYTAOLabel.Text = "NGAYTAO:";
-            // 
             // mAKHComboBox
             // 
             this.mAKHComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
@@ -189,14 +134,89 @@ namespace QLHomeStay_App.GUI
             this.mAKHComboBox.Size = new System.Drawing.Size(125, 24);
             this.mAKHComboBox.TabIndex = 3;
             // 
-            // mAKHLabel
+            // groupControl1
             // 
-            mAKHLabel.AutoSize = true;
-            mAKHLabel.Location = new System.Drawing.Point(73, 99);
-            mAKHLabel.Name = "mAKHLabel";
-            mAKHLabel.Size = new System.Drawing.Size(48, 17);
-            mAKHLabel.TabIndex = 2;
-            mAKHLabel.Text = "MAKH:";
+            this.groupControl1.Controls.Add(this.btn_CTHD);
+            this.groupControl1.Controls.Add(this.btn_sua);
+            this.groupControl1.Controls.Add(this.btn_xoa);
+            this.groupControl1.Controls.Add(this.btn_them);
+            this.groupControl1.Controls.Add(this.dataGridView1);
+            this.groupControl1.Controls.Add(mAHDLabel1);
+            this.groupControl1.Controls.Add(this.mAHDSpinEdit1);
+            this.groupControl1.Controls.Add(mAKHLabel);
+            this.groupControl1.Controls.Add(this.mAKHComboBox);
+            this.groupControl1.Controls.Add(nGAYTAOLabel);
+            this.groupControl1.Controls.Add(this.nGAYTAODateEdit);
+            this.groupControl1.Location = new System.Drawing.Point(28, 30);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(621, 480);
+            this.groupControl1.TabIndex = 1;
+            this.groupControl1.Text = "Hóa đơn";
+            // 
+            // btn_sua
+            // 
+            this.btn_sua.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_sua.FillColor = System.Drawing.Color.Transparent;
+            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_sua.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_sua.Image = global::QLHomeStay_App.Properties.Resources.refresh;
+            this.btn_sua.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_sua.Location = new System.Drawing.Point(335, 376);
+            this.btn_sua.Name = "btn_sua";
+            this.btn_sua.Size = new System.Drawing.Size(101, 80);
+            this.btn_sua.TabIndex = 163;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            // 
+            // btn_xoa
+            // 
+            this.btn_xoa.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_xoa.FillColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_xoa.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_xoa.Image = global::QLHomeStay_App.Properties.Resources.remove;
+            this.btn_xoa.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_xoa.Location = new System.Drawing.Point(176, 376);
+            this.btn_xoa.Name = "btn_xoa";
+            this.btn_xoa.Size = new System.Drawing.Size(101, 80);
+            this.btn_xoa.TabIndex = 164;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // btn_them
+            // 
+            this.btn_them.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_them.FillColor = System.Drawing.Color.Transparent;
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_them.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_them.Image = global::QLHomeStay_App.Properties.Resources.checked3;
+            this.btn_them.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_them.Location = new System.Drawing.Point(5, 376);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(101, 80);
+            this.btn_them.TabIndex = 165;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(37, 195);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(433, 150);
+            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // mAHDSpinEdit1
             // 
@@ -213,50 +233,41 @@ namespace QLHomeStay_App.GUI
             this.mAHDSpinEdit1.Size = new System.Drawing.Size(125, 24);
             this.mAHDSpinEdit1.TabIndex = 1;
             // 
-            // mAHDLabel1
+            // nGAYTAODateEdit
             // 
-            mAHDLabel1.AutoSize = true;
-            mAHDLabel1.Location = new System.Drawing.Point(73, 66);
-            mAHDLabel1.Name = "mAHDLabel1";
-            mAHDLabel1.Size = new System.Drawing.Size(50, 17);
-            mAHDLabel1.TabIndex = 0;
-            mAHDLabel1.Text = "MAHD:";
+            this.nGAYTAODateEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.hOADONBindingSource, "NGAYTAO", true));
+            this.nGAYTAODateEdit.EditValue = null;
+            this.nGAYTAODateEdit.Location = new System.Drawing.Point(152, 124);
+            this.nGAYTAODateEdit.Name = "nGAYTAODateEdit";
+            this.nGAYTAODateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.nGAYTAODateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.nGAYTAODateEdit.Size = new System.Drawing.Size(125, 22);
+            this.nGAYTAODateEdit.TabIndex = 5;
             // 
-            // hOADONGridControl
+            // cTHDBindingSource
             // 
-            this.hOADONGridControl.DataSource = this.hOADONBindingSource;
-            this.hOADONGridControl.Location = new System.Drawing.Point(5, 240);
-            this.hOADONGridControl.MainView = this.gridView2;
-            this.hOADONGridControl.Name = "hOADONGridControl";
-            this.hOADONGridControl.Size = new System.Drawing.Size(584, 220);
-            this.hOADONGridControl.TabIndex = 6;
-            this.hOADONGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.cTHDBindingSource.DataMember = "FK_CTHD_HD";
+            this.cTHDBindingSource.DataSource = this.hOADONBindingSource;
             // 
-            // gridView1
+            // btn_CTHD
             // 
-            this.gridView1.GridControl = this.hOADONGridControl;
-            this.gridView1.Name = "gridView1";
-            // 
-            // gridView2
-            // 
-            this.gridView2.GridControl = this.hOADONGridControl;
-            this.gridView2.Name = "gridView2";
-            // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.hOADONGridControl);
-            this.groupControl1.Controls.Add(mAHDLabel1);
-            this.groupControl1.Controls.Add(this.mAHDSpinEdit1);
-            this.groupControl1.Controls.Add(mAKHLabel);
-            this.groupControl1.Controls.Add(this.mAKHComboBox);
-            this.groupControl1.Controls.Add(nGAYTAOLabel);
-            this.groupControl1.Controls.Add(this.nGAYTAODateEdit);
-            this.groupControl1.Location = new System.Drawing.Point(31, 42);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(607, 480);
-            this.groupControl1.TabIndex = 1;
-            this.groupControl1.Text = "Hóa đơn";
+            this.btn_CTHD.BorderColor = System.Drawing.Color.Transparent;
+            this.btn_CTHD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_CTHD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_CTHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_CTHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_CTHD.FillColor = System.Drawing.Color.Transparent;
+            this.btn_CTHD.Font = new System.Drawing.Font("Segoe UI", 24F);
+            this.btn_CTHD.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_CTHD.Image = global::QLHomeStay_App.Properties.Resources.plus;
+            this.btn_CTHD.ImageSize = new System.Drawing.Size(50, 50);
+            this.btn_CTHD.Location = new System.Drawing.Point(460, 376);
+            this.btn_CTHD.Name = "btn_CTHD";
+            this.btn_CTHD.Size = new System.Drawing.Size(101, 80);
+            this.btn_CTHD.TabIndex = 171;
+            this.btn_CTHD.Click += new System.EventHandler(this.btn_CTHD_Click);
             // 
             // frmQLHD
             // 
@@ -264,27 +275,20 @@ namespace QLHomeStay_App.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(675, 583);
             this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.hOADONBindingNavigator);
             this.Name = "frmQLHD";
             this.Text = "frmQLHD";
             this.Load += new System.EventHandler(this.frmQLHD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qL_KH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingNavigator)).EndInit();
-            this.hOADONBindingNavigator.ResumeLayout(false);
-            this.hOADONBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mAHDSpinEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hOADONGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mAHDSpinEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nGAYTAODateEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -294,18 +298,16 @@ namespace QLHomeStay_App.GUI
         private System.Windows.Forms.BindingSource hOADONBindingSource;
         private QL_KHTableAdapters.HOADONTableAdapter hOADONTableAdapter;
         private QL_KHTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator hOADONBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton hOADONBindingNavigatorSaveItem;
         private QL_KHTableAdapters.CTHDTableAdapter cTHDTableAdapter;
         private System.Windows.Forms.BindingSource cTHDBindingSource;
         private DevExpress.XtraEditors.DateEdit nGAYTAODateEdit;
         private System.Windows.Forms.ComboBox mAKHComboBox;
         private DevExpress.XtraEditors.SpinEdit mAHDSpinEdit1;
-        private DevExpress.XtraGrid.GridControl hOADONGridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Guna.UI2.WinForms.Guna2Button btn_sua;
+        private Guna.UI2.WinForms.Guna2Button btn_xoa;
+        private Guna.UI2.WinForms.Guna2Button btn_them;
+        private Guna.UI2.WinForms.Guna2Button btn_CTHD;
     }
 }

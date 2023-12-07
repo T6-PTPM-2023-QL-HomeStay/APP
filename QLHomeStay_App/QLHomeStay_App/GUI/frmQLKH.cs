@@ -8,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL;
 
 namespace QLHomeStay_App.GUI
 {
     public partial class frmQLKH : DevExpress.XtraEditors.XtraForm
     {
+        DAL_KHACHHANG kh = new DAL_KHACHHANG();
         public frmQLKH()
         {
             InitializeComponent();
+            mATKComboBox.DataSource = kh.getMaTK();
+            mATKComboBox.SelectedItem = 0;
         }
 
         private void btn_tk_Click(object sender, EventArgs e)
@@ -26,9 +30,17 @@ namespace QLHomeStay_App.GUI
 
         private void kHACHHANGBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.kHACHHANGBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.qL_KH);
+            try
+            {
+                this.Validate();
+                this.kHACHHANGBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.qL_KH);
+                MessageBox.Show("Lưu thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Lưu thất bại");
+            }
 
         }
 
