@@ -16,7 +16,10 @@ namespace DAL
             return (from tk in db.LOAIPHONGs select tk).ToList();
         }
 
-       
+       public List<string>getTenLP()
+        {
+            return   db.LOAIPHONGs.Select(lp => lp.MALOAI).ToList();           
+        }
 
         public bool insertLoaiPhong(string ma, string ten, float gb)
         {

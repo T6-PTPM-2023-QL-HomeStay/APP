@@ -159,6 +159,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\CTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CTHD.Designer.cs">
+      <DependentUpon>CTHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmQLHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,6 +232,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_KH.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\CTHD.resx">
+      <DependentUpon>CTHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQLHD.resx">
       <DependentUpon>frmQLHD.cs</DependentUpon>
     </EmbeddedResource>

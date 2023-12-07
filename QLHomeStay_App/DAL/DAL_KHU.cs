@@ -17,73 +17,58 @@ namespace DAL
             var khu = from k in db.KHUs select k;
             return khu.ToList();
         }
-        public DataTable ConvertKHUsToDataTable()
+        public List<string> getMaKhu()
         {
-            List<KHU> khus = GetKHUs();
+            return db.KHUs.Select(lp => lp.MAKHU).ToList();
 
+            // Hiển thị các tên loại
 
-            DataTable dataTable = new DataTable();
-
-
-            foreach (var property in typeof(KHU).GetProperties())
-            {
-                dataTable.Columns.Add(property.Name, property.PropertyType);
-            }
-            foreach (var khu in khus)
-            {
-                DataRow row = dataTable.NewRow();
-                foreach (var property in typeof(KHU).GetProperties())
-                {
-                    row[property.Name] = property.GetValue(khu);
-                }
-
-                dataTable.Rows.Add(row);
-            }
-
-            return dataTable;
         }
-        public bool themKhu(KHU np)
+        public bool insertKhu(string ma, string ten)
         {
             try
             {
-                db.KHUs.InsertOnSubmit(np);
+                KHU khu = new KHU { MAKHU = ma, TENKHU = ten };
+                db.KHUs.InsertOnSubmit(khu);
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
-        public bool xoaKhu(string maKhu)
+
+        public bool updateKhu(string ma, string ten)
         {
             try
             {
-                KHU khu = db.KHUs.Where(p => p.MAKHU == maKhu).FirstOrDefault();
-                db.KHUs.DeleteOnSubmit(khu);
+                KHU _taiKhoan = db.KHUs.Where(tk => tk.MAKHU == ma).FirstOrDefault();
+                _taiKhoan.TENKHU = ten;
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
-        public bool suakhu(KHU p)
+
+        public bool xoaKhu(string ma)
         {
             try
             {
-                KHU _dv = db.KHUs.Where(ph => ph.MAKHU == p.MAKHU).FirstOrDefault();
-                _dv.TENKHU = p.TENKHU;
-               
+                KHU _taiKhoan = db.KHUs.Where(tk => tk.MAKHU == ma).FirstOrDefault();
+                db.KHUs.DeleteOnSubmit(_taiKhoan);
                 db.SubmitChanges();
                 return true;
             }
-            catch
+            catch (Exception _ex)
             {
                 return false;
             }
         }
+
 
         public bool checkPrimaryKey(string ma)
         {

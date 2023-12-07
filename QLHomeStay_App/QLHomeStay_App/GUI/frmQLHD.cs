@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DAL;
 namespace QLHomeStay_App.GUI
 {
     public partial class frmQLHD : DevExpress.XtraEditors.XtraForm
@@ -16,15 +16,20 @@ namespace QLHomeStay_App.GUI
         public frmQLHD()
         {
             InitializeComponent();
+            mAKHComboBox.DataSource = kh.getAllMaKH();
+            mAKHComboBox.SelectedItem = 0;
+
         }
+        DAL_KHACHHANG kh = new DAL_KHACHHANG();
 
         private void hOADONBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
             this.hOADONBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.qL_KH);
+            this.hOADONTableAdapter.Fill(this.qL_KH.HOADON);
 
         }
+
 
         private void frmQLHD_Load(object sender, EventArgs e)
         {

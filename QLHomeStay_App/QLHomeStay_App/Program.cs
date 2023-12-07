@@ -17,7 +17,7 @@ namespace QLHomeStay_App
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLHD());
+            Application.Run(new frm_DangNhap());
         }
     }
 }

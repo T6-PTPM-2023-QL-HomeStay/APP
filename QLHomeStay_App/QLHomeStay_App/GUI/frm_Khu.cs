@@ -17,7 +17,7 @@ namespace QLHomeStay_App
         public frm_Khu()
         {                    
             InitializeComponent();
-            dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+          //  dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
             dgv_khu.Columns["MAKHU"].HeaderText = "Mã Khu";
             dgv_khu.Columns["TENKHU"].HeaderText = "Tên Khu";
         }
@@ -31,16 +31,12 @@ namespace QLHomeStay_App
                 DialogResult d = MessageBox.Show("Bạn có chắc muốn Thêm?", "Xác nhận", MessageBoxButtons.YesNo);
                 if (d == DialogResult.Yes)
                 {
-                    KHU p = new KHU
-                    {
-                        MAKHU = txt_makhu.Text,
-                        TENKHU = txt_tenkhu.Text,
-
-                    };
-                    if (khu.themKhu(p))
+                  
+                    if (khu.insertKhu(txt_makhu.Text,txt_tenkhu.Text))
                     {
                         MessageBox.Show("Thêm thành công!");
-                        dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                        //   dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                        dgv_khu.DataSource = khu.GetKHUs();
                     }
 
                     else
@@ -55,13 +51,8 @@ namespace QLHomeStay_App
             DialogResult d = MessageBox.Show("Bạn có chắc muốn Sửa?", "Xác nhận", MessageBoxButtons.YesNo);
             if (d == DialogResult.Yes)
             {
-                KHU p = new KHU
-                {
-                    MAKHU = txt_makhu.Text,
-                    TENKHU = txt_tenkhu.Text,
-
-                };
-                if (khu.suakhu(p))
+               
+                if (khu.updateKhu(txt_makhu.Text,txt_tenkhu.Text))
                     MessageBox.Show("Sửa thành công!");
                 else
                     MessageBox.Show("Sửa thất bại!");
@@ -80,7 +71,8 @@ namespace QLHomeStay_App
                     MessageBox.Show("Xóa thành công!");
                 else
                     MessageBox.Show("Xóa thất bại!");
-                dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                //   dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                dgv_khu.DataSource = khu.GetKHUs();
             }
         }
 
@@ -96,7 +88,8 @@ namespace QLHomeStay_App
             bool found = khu.search(tenkhu);
             if (found)
             {
-                dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                //    dgv_khu.DataSource = khu.ConvertKHUsToDataTable();
+                dgv_khu.DataSource = khu.GetKHUs();
             }
             else
             {

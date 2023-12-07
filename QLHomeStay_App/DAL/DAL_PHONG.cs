@@ -14,7 +14,14 @@ namespace DAL
             return (from tk in db.PHONGs select tk).ToList();
         }
 
+        public List<string> getTenPhong()
+        {
+           return db.PHONGs.Select(lp => lp.MALOAIPHONG).ToList();
 
+
+           
+
+        }
         
         public bool insertPhong(string map,string malp, string makhu, string tenp,int song,string trangthai)
         {

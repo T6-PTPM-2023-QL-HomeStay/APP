@@ -31,6 +31,9 @@
             this.title = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tieude = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnQLPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnQLDV = new Guna.UI2.WinForms.Guna2Button();
@@ -38,13 +41,10 @@
             this.btnQLTK = new Guna.UI2.WinForms.Guna2Button();
             this.btn_qlnv = new Guna.UI2.WinForms.Guna2Button();
             this.btn_qlkh = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.tieude = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // title
@@ -83,6 +83,38 @@
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(85, 24);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Lởi chào:";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.guna2Panel3);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1358, 915);
+            this.guna2Panel1.TabIndex = 0;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.OldLace;
+            this.guna2Panel2.Controls.Add(this.tieude);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(299, 0);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(1059, 105);
+            this.guna2Panel2.TabIndex = 7;
+            // 
+            // tieude
+            // 
+            this.tieude.BackColor = System.Drawing.Color.Transparent;
+            this.tieude.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tieude.Location = new System.Drawing.Point(474, 31);
+            this.tieude.Name = "tieude";
+            this.tieude.Size = new System.Drawing.Size(3, 2);
+            this.tieude.TabIndex = 0;
+            this.tieude.Text = null;
+            this.tieude.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnQLPhong
             // 
@@ -169,14 +201,14 @@
             this.btnQLTK.FillColor = System.Drawing.Color.SteelBlue;
             this.btnQLTK.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnQLTK.ForeColor = System.Drawing.Color.White;
-            this.btnQLTK.Image = global::QLHomeStay_App.Properties.Resources.growth;
+            this.btnQLTK.Image = global::QLHomeStay_App.Properties.Resources.dv;
             this.btnQLTK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnQLTK.ImageSize = new System.Drawing.Size(35, 35);
             this.btnQLTK.Location = new System.Drawing.Point(0, 569);
             this.btnQLTK.Name = "btnQLTK";
             this.btnQLTK.Size = new System.Drawing.Size(299, 87);
             this.btnQLTK.TabIndex = 3;
-            this.btnQLTK.Text = "Thống kê ";
+            this.btnQLTK.Text = "Tài Khoản";
             this.btnQLTK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnQLTK.Click += new System.EventHandler(this.btnQLTK_Click);
             // 
@@ -222,38 +254,6 @@
             this.btn_qlkh.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_qlkh.Click += new System.EventHandler(this.btn_qlkh_Click);
             // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Controls.Add(this.guna2Panel3);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1358, 915);
-            this.guna2Panel1.TabIndex = 0;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.OldLace;
-            this.guna2Panel2.Controls.Add(this.tieude);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(299, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1059, 105);
-            this.guna2Panel2.TabIndex = 7;
-            // 
-            // tieude
-            // 
-            this.tieude.BackColor = System.Drawing.Color.Transparent;
-            this.tieude.Font = new System.Drawing.Font("Tahoma", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tieude.Location = new System.Drawing.Point(474, 31);
-            this.tieude.Name = "tieude";
-            this.tieude.Size = new System.Drawing.Size(3, 2);
-            this.tieude.TabIndex = 0;
-            this.tieude.Text = null;
-            this.tieude.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frm_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -264,10 +264,10 @@
             this.Text = "TRANG CHỦ";
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

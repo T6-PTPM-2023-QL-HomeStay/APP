@@ -90,54 +90,54 @@
             mANVLabel1.AutoSize = true;
             mANVLabel1.Location = new System.Drawing.Point(137, 70);
             mANVLabel1.Name = "mANVLabel1";
-            mANVLabel1.Size = new System.Drawing.Size(71, 24);
+            mANVLabel1.Size = new System.Drawing.Size(68, 24);
             mANVLabel1.TabIndex = 182;
-            mANVLabel1.Text = "MANV:";
+            mANVLabel1.Text = "Mã NV";
             // 
             // hOTENLabel1
             // 
             hOTENLabel1.AutoSize = true;
             hOTENLabel1.Location = new System.Drawing.Point(137, 104);
             hOTENLabel1.Name = "hOTENLabel1";
-            hOTENLabel1.Size = new System.Drawing.Size(83, 24);
+            hOTENLabel1.Size = new System.Drawing.Size(74, 24);
             hOTENLabel1.TabIndex = 184;
-            hOTENLabel1.Text = "HOTEN:";
+            hOTENLabel1.Text = "Họ Tên";
             // 
             // gIOITINHLabel1
             // 
             gIOITINHLabel1.AutoSize = true;
             gIOITINHLabel1.Location = new System.Drawing.Point(137, 138);
             gIOITINHLabel1.Name = "gIOITINHLabel1";
-            gIOITINHLabel1.Size = new System.Drawing.Size(96, 24);
+            gIOITINHLabel1.Size = new System.Drawing.Size(86, 24);
             gIOITINHLabel1.TabIndex = 186;
-            gIOITINHLabel1.Text = "GIOITINH:";
+            gIOITINHLabel1.Text = "Giới Tính";
             // 
             // nGAYSINHLabel1
             // 
             nGAYSINHLabel1.AutoSize = true;
             nGAYSINHLabel1.Location = new System.Drawing.Point(137, 173);
             nGAYSINHLabel1.Name = "nGAYSINHLabel1";
-            nGAYSINHLabel1.Size = new System.Drawing.Size(112, 24);
+            nGAYSINHLabel1.Size = new System.Drawing.Size(97, 24);
             nGAYSINHLabel1.TabIndex = 188;
-            nGAYSINHLabel1.Text = "NGAYSINH:";
+            nGAYSINHLabel1.Text = "Ngày Sinh";
             // 
             // qUEQUANLabel1
             // 
             qUEQUANLabel1.AutoSize = true;
             qUEQUANLabel1.Location = new System.Drawing.Point(137, 206);
             qUEQUANLabel1.Name = "qUEQUANLabel1";
-            qUEQUANLabel1.Size = new System.Drawing.Size(111, 24);
+            qUEQUANLabel1.Size = new System.Drawing.Size(99, 24);
             qUEQUANLabel1.TabIndex = 190;
-            qUEQUANLabel1.Text = "QUEQUAN:";
+            qUEQUANLabel1.Text = "Quê Quán";
             // 
             // sDTLabel1
             // 
             sDTLabel1.AutoSize = true;
             sDTLabel1.Location = new System.Drawing.Point(137, 240);
             sDTLabel1.Name = "sDTLabel1";
-            sDTLabel1.Size = new System.Drawing.Size(52, 24);
+            sDTLabel1.Size = new System.Drawing.Size(47, 24);
             sDTLabel1.TabIndex = 192;
-            sDTLabel1.Text = "SDT:";
+            sDTLabel1.Text = "SĐT";
             // 
             // cCCDLabel1
             // 
@@ -153,18 +153,18 @@
             cHUCVULabel1.AutoSize = true;
             cHUCVULabel1.Location = new System.Drawing.Point(137, 308);
             cHUCVULabel1.Name = "cHUCVULabel1";
-            cHUCVULabel1.Size = new System.Drawing.Size(94, 24);
+            cHUCVULabel1.Size = new System.Drawing.Size(84, 24);
             cHUCVULabel1.TabIndex = 196;
-            cHUCVULabel1.Text = "CHUCVU:";
+            cHUCVULabel1.Text = "Chức Vụ";
             // 
             // mATKLabel1
             // 
             mATKLabel1.AutoSize = true;
             mATKLabel1.Location = new System.Drawing.Point(137, 342);
             mATKLabel1.Name = "mATKLabel1";
-            mATKLabel1.Size = new System.Drawing.Size(68, 24);
+            mATKLabel1.Size = new System.Drawing.Size(65, 24);
             mATKLabel1.TabIndex = 198;
-            mATKLabel1.Text = "MATK:";
+            mATKLabel1.Text = "Mã TK";
             // 
             // guna2Panel1
             // 

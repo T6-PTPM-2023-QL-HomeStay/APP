@@ -59,8 +59,8 @@ namespace QLHomeStay_App.GUI
 
         private void btnQLTK_Click(object sender, EventArgs e)
         {
-            //frmQLTK tk = new frmQLTK();
-           // openChildForm(tk);
+            frm_QLTK tk = new frm_QLTK();
+            openChildForm(tk);
         }
 
         private void btnQLHD_Click(object sender, EventArgs e)

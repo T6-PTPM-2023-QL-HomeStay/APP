@@ -309,4 +309,4 @@ D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu.UI.WinFor
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu.UI.WinForms.ToggleSwitch.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\bin\Debug\Bunifu_UI_v1.5.3.xml
 D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.exe.config
-D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.XtraReport1.resources
+D:\ADoAn\QLHomeStay_APP\QLHomeStay_App\QLHomeStay_App\obj\Debug\QLHomeStay_App.GUI.CTHD.resources
