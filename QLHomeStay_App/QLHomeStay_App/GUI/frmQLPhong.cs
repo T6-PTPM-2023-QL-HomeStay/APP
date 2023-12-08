@@ -84,5 +84,10 @@ namespace QLHomeStay_App.GUI
             }
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = phong.getAllPhong();
+        }
     }
 }

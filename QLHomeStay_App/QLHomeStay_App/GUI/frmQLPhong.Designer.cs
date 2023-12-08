@@ -31,6 +31,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbtrangThai = new System.Windows.Forms.ComboBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -50,7 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cbbtrangThai = new System.Windows.Forms.ComboBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -86,6 +87,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.groupBox2.Controls.Add(this.guna2Button1);
             this.groupBox2.Controls.Add(this.cbbtrangThai);
             this.groupBox2.Controls.Add(this.guna2Panel3);
             this.groupBox2.Controls.Add(this.guna2HtmlLabel2);
@@ -109,6 +111,14 @@
             this.groupBox2.TabIndex = 125;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin chi tiết";
+            // 
+            // cbbtrangThai
+            // 
+            this.cbbtrangThai.FormattingEnabled = true;
+            this.cbbtrangThai.Location = new System.Drawing.Point(226, 461);
+            this.cbbtrangThai.Name = "cbbtrangThai";
+            this.cbbtrangThai.Size = new System.Drawing.Size(317, 28);
+            this.cbbtrangThai.TabIndex = 174;
             // 
             // guna2Panel3
             // 
@@ -318,13 +328,24 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // cbbtrangThai
+            // guna2Button1
             // 
-            this.cbbtrangThai.FormattingEnabled = true;
-            this.cbbtrangThai.Location = new System.Drawing.Point(226, 461);
-            this.cbbtrangThai.Name = "cbbtrangThai";
-            this.cbbtrangThai.Size = new System.Drawing.Size(317, 28);
-            this.cbbtrangThai.TabIndex = 174;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = global::QLHomeStay_App.Properties.Resources.refresh1;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button1.Location = new System.Drawing.Point(294, 654);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(103, 29);
+            this.guna2Button1.TabIndex = 174;
+            this.guna2Button1.Text = "Load";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // frmQLPhong
             // 
@@ -371,5 +392,6 @@
         private System.Windows.Forms.ComboBox cbo_loai;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbbtrangThai;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
