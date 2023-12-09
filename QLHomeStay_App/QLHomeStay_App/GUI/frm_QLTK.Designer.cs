@@ -52,9 +52,7 @@
             this.cbo_quyen = new System.Windows.Forms.ComboBox();
             this.txt_mk = new System.Windows.Forms.TextBox();
             this.txt_tendangnhap = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.txt_matk = new System.Windows.Forms.TextBox();
-            this.txtSearchNV = new System.Windows.Forms.TextBox();
             this.btn_them = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,7 +61,6 @@
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_capnhat = new System.Windows.Forms.Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.nHANVIENGridControl = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.qL_KH = new QLHomeStay_App.QL_KH();
@@ -235,9 +232,9 @@
             this.groupBox3.Controls.Add(this.nHANVIENGridControl);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox3.Location = new System.Drawing.Point(670, 0);
+            this.groupBox3.Location = new System.Drawing.Point(538, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(614, 746);
+            this.groupBox3.Size = new System.Drawing.Size(746, 746);
             this.groupBox3.TabIndex = 62;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Danh sách tài khoản";
@@ -246,13 +243,10 @@
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox2.Controls.Add(this.guna2PictureBox1);
-            this.groupBox2.Controls.Add(this.guna2Button1);
             this.groupBox2.Controls.Add(this.cbo_quyen);
             this.groupBox2.Controls.Add(this.txt_mk);
             this.groupBox2.Controls.Add(this.txt_tendangnhap);
-            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.txt_matk);
-            this.groupBox2.Controls.Add(this.txtSearchNV);
             this.groupBox2.Controls.Add(this.btn_them);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
@@ -264,7 +258,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(670, 746);
+            this.groupBox2.Size = new System.Drawing.Size(538, 746);
             this.groupBox2.TabIndex = 63;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin tài khoản";
@@ -289,51 +283,31 @@
             // cbo_quyen
             // 
             this.cbo_quyen.FormattingEnabled = true;
-            this.cbo_quyen.Location = new System.Drawing.Point(280, 285);
+            this.cbo_quyen.Location = new System.Drawing.Point(223, 295);
             this.cbo_quyen.Name = "cbo_quyen";
             this.cbo_quyen.Size = new System.Drawing.Size(251, 30);
             this.cbo_quyen.TabIndex = 159;
             // 
             // txt_mk
             // 
-            this.txt_mk.Location = new System.Drawing.Point(280, 230);
+            this.txt_mk.Location = new System.Drawing.Point(223, 240);
             this.txt_mk.Name = "txt_mk";
             this.txt_mk.Size = new System.Drawing.Size(251, 28);
             this.txt_mk.TabIndex = 156;
             // 
             // txt_tendangnhap
             // 
-            this.txt_tendangnhap.Location = new System.Drawing.Point(280, 176);
+            this.txt_tendangnhap.Location = new System.Drawing.Point(223, 186);
             this.txt_tendangnhap.Name = "txt_tendangnhap";
             this.txt_tendangnhap.Size = new System.Drawing.Size(251, 28);
             this.txt_tendangnhap.TabIndex = 157;
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(19, 40);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(106, 25);
-            this.label16.TabIndex = 148;
-            this.label16.Text = "Tìm kiếm:";
-            // 
             // txt_matk
             // 
-            this.txt_matk.Location = new System.Drawing.Point(280, 122);
+            this.txt_matk.Location = new System.Drawing.Point(223, 132);
             this.txt_matk.Name = "txt_matk";
             this.txt_matk.Size = new System.Drawing.Size(251, 28);
             this.txt_matk.TabIndex = 158;
-            // 
-            // txtSearchNV
-            // 
-            this.txtSearchNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtSearchNV.Location = new System.Drawing.Point(151, 40);
-            this.txtSearchNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSearchNV.Name = "txtSearchNV";
-            this.txtSearchNV.Size = new System.Drawing.Size(272, 30);
-            this.txtSearchNV.TabIndex = 147;
             // 
             // btn_them
             // 
@@ -341,7 +315,7 @@
             this.btn_them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_them.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_them.ForeColor = System.Drawing.Color.White;
-            this.btn_them.Location = new System.Drawing.Point(99, 380);
+            this.btn_them.Location = new System.Drawing.Point(42, 390);
             this.btn_them.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(133, 52);
@@ -354,7 +328,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(102, 123);
+            this.label4.Location = new System.Drawing.Point(45, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 25);
             this.label4.TabIndex = 154;
@@ -365,7 +339,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(102, 231);
+            this.label6.Location = new System.Drawing.Point(45, 241);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(108, 25);
             this.label6.TabIndex = 153;
@@ -376,7 +350,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(92, 179);
+            this.label7.Location = new System.Drawing.Point(35, 189);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(165, 25);
             this.label7.TabIndex = 152;
@@ -387,7 +361,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(103, 286);
+            this.label13.Location = new System.Drawing.Point(46, 296);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(83, 25);
             this.label13.TabIndex = 151;
@@ -399,7 +373,7 @@
             this.btn_xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_xoa.ForeColor = System.Drawing.Color.White;
-            this.btn_xoa.Location = new System.Drawing.Point(410, 380);
+            this.btn_xoa.Location = new System.Drawing.Point(353, 390);
             this.btn_xoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_xoa.Name = "btn_xoa";
             this.btn_xoa.Size = new System.Drawing.Size(133, 51);
@@ -413,7 +387,7 @@
             this.btn_capnhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_capnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_capnhat.ForeColor = System.Drawing.Color.White;
-            this.btn_capnhat.Location = new System.Drawing.Point(253, 381);
+            this.btn_capnhat.Location = new System.Drawing.Point(196, 391);
             this.btn_capnhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_capnhat.Name = "btn_capnhat";
             this.btn_capnhat.Size = new System.Drawing.Size(133, 51);
@@ -425,30 +399,12 @@
             // 
             this.guna2PictureBox1.Image = global::QLHomeStay_App.Properties.Resources.hotel__1_1;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(670, 104);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(557, 132);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(275, 295);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(243, 295);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 161;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Image = global::QLHomeStay_App.Properties.Resources.search1;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button1.Location = new System.Drawing.Point(445, 40);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(60, 36);
-            this.guna2Button1.TabIndex = 160;
             // 
             // nHANVIENGridControl
             // 
@@ -457,7 +413,7 @@
             this.nHANVIENGridControl.Location = new System.Drawing.Point(3, 24);
             this.nHANVIENGridControl.MainView = this.gridView1;
             this.nHANVIENGridControl.Name = "nHANVIENGridControl";
-            this.nHANVIENGridControl.Size = new System.Drawing.Size(608, 719);
+            this.nHANVIENGridControl.Size = new System.Drawing.Size(740, 719);
             this.nHANVIENGridControl.TabIndex = 2;
             this.nHANVIENGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -566,13 +522,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.ComboBox cbo_quyen;
         private System.Windows.Forms.TextBox txt_mk;
         private System.Windows.Forms.TextBox txt_tendangnhap;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txt_matk;
-        private System.Windows.Forms.TextBox txtSearchNV;
         private System.Windows.Forms.Button btn_them;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
