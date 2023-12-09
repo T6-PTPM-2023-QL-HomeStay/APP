@@ -17,7 +17,7 @@ namespace QLHomeStay_App.GUI
         public frmQLDV()
         {
             InitializeComponent();
-            dataGridView1.DataSource = dv.GetDICHVUs();
+            //dataGridView1.DataSource = dv.GetDICHVUs();
         }
         DAL_DICHVU dv = new DAL_DICHVU();
         private void btn_phong_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace QLHomeStay_App.GUI
                     if (dv.insertDV(int.Parse(txt_madv.Text), txt_tendv.Text,float.Parse(txt_giaBan.Text)))
                     {
                         MessageBox.Show("Thêm thành công!");
-                        dataGridView1.DataSource = dv.GetDICHVUs();
+                        //dataGridView1.DataSource = dv.GetDICHVUs();
                     }
 
                     else
@@ -60,7 +60,7 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Xóa thành công!");
                 else
                     MessageBox.Show("Xóa thất bại!");
-                dataGridView1.DataSource = dv.GetDICHVUs();
+                //dataGridView1.DataSource = dv.GetDICHVUs();
             }
         }
 
@@ -74,20 +74,20 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Sửa thành công!");
                 else
                     MessageBox.Show("Sửa thất bại!");
-                dataGridView1.DataSource = dv.GetDICHVUs();
+                //dataGridView1.DataSource = dv.GetDICHVUs();
             }
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dataGridView1.SelectedRows[0];
-                txt_madv.Text = r.Cells[0].Value.ToString().Trim();
-                txt_tendv.Text = r.Cells[1].Value.ToString().Trim();
-                txt_giaBan.Text = r.Cells[2].Value.ToString().Trim();
+            //if (dataGridView1.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = dataGridView1.SelectedRows[0];
+            //    txt_madv.Text = r.Cells[0].Value.ToString().Trim();
+            //    txt_tendv.Text = r.Cells[1].Value.ToString().Trim();
+            //    txt_giaBan.Text = r.Cells[2].Value.ToString().Trim();
              
-            }
+            //}
         }
 
       

@@ -23,8 +23,8 @@ namespace QLHomeStay_App
 
         public void loadDataDefault()
         {
-            dgv_tk.DataSource = null;
-            dgv_tk.DataSource = dalNV.getAllTaiKhoan();
+            //dgv_tk.DataSource = null;
+            //dgv_tk.DataSource = dalNV.getAllTaiKhoan();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -64,82 +64,82 @@ namespace QLHomeStay_App
 
         private void dgv_tk_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgv_tk.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dgv_tk.SelectedRows[0];
-                txt_matk.Text = r.Cells[0].Value.ToString().Trim();
-                txt_tendangnhap.Text = r.Cells[1].Value.ToString().Trim();
-                txt_mk.Text = r.Cells[2].Value.ToString().Trim();
-                cbo_quyen.Text = r.Cells[3].Value.ToString().Trim();
-            }
+            //if (dgv_tk.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = dgv_tk.SelectedRows[0];
+            //    txt_matk.Text = r.Cells[0].Value.ToString().Trim();
+            //    txt_tendangnhap.Text = r.Cells[1].Value.ToString().Trim();
+            //    txt_mk.Text = r.Cells[2].Value.ToString().Trim();
+            //    cbo_quyen.Text = r.Cells[3].Value.ToString().Trim();
+            //}
         }
 
         private void btn_capnhat_Click(object sender, EventArgs e)
         {
-            if (dgv_tk.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dgv_tk.SelectedRows[0];
-                string maTK = r.Cells[0].Value.ToString().Trim();
+            //if (dgv_tk.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = dgv_tk.SelectedRows[0];
+            //    string maTK = r.Cells[0].Value.ToString().Trim();
 
-                if (txt_mk.Text.Trim() == string.Empty || cbo_quyen.SelectedIndex < 0)
-                {
-                    MessageBox.Show("Vui lòng điền đủ thông tin!");
-                    return;
-                }
+            //    if (txt_mk.Text.Trim() == string.Empty || cbo_quyen.SelectedIndex < 0)
+            //    {
+            //        MessageBox.Show("Vui lòng điền đủ thông tin!");
+            //        return;
+            //    }
 
-                DialogResult result = MessageBox.Show("Xác nhận Sửa thông tin tài khoản?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //    DialogResult result = MessageBox.Show("Xác nhận Sửa thông tin tài khoản?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (result == DialogResult.Yes)
-                {
-                    if (dalNV.updateTaiKhoan(maTK, txt_mk.Text.Trim(), cbo_quyen.SelectedItem.ToString().Trim()))
-                    {
+            //    if (result == DialogResult.Yes)
+            //    {
+            //        if (dalNV.updateTaiKhoan(maTK, txt_mk.Text.Trim(), cbo_quyen.SelectedItem.ToString().Trim()))
+            //        {
 
-                        MessageBox.Show("Sửa thông tin tài khoản thành công!");
-                        loadDataDefault();
-                    }
-                    else
-                        MessageBox.Show("Sửa tài khoản thất bại!");
-                }
-            }
-            else
-                MessageBox.Show("Vui lòng chọn!");
+            //            MessageBox.Show("Sửa thông tin tài khoản thành công!");
+            //            loadDataDefault();
+            //        }
+            //        else
+            //            MessageBox.Show("Sửa tài khoản thất bại!");
+            //    }
+            //}
+            //else
+            //    MessageBox.Show("Vui lòng chọn!");
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            if (dgv_tk.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dgv_tk.SelectedRows[0];
-                string maTK = r.Cells[0].Value.ToString().Trim();
+            //if (dgv_tk.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = dgv_tk.SelectedRows[0];
+            //    string maTK = r.Cells[0].Value.ToString().Trim();
 
-                DialogResult result = MessageBox.Show("Xác nhận Xóa thông tin tài khoản?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //    DialogResult result = MessageBox.Show("Xác nhận Xóa thông tin tài khoản?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (result == DialogResult.Yes)
-                {
-                    if (dalNV.xoaTaiKhoan(maTK))
-                    {
+            //    if (result == DialogResult.Yes)
+            //    {
+            //        if (dalNV.xoaTaiKhoan(maTK))
+            //        {
 
-                        MessageBox.Show("Xóa thông tin tài khoản thành công!");
-                        loadDataDefault();
-                    }
-                    else
-                        MessageBox.Show("Xóa tài khoản thất bại!");
-                }
-            }
-            else
-                MessageBox.Show("Vui lòng chọn!");
+            //            MessageBox.Show("Xóa thông tin tài khoản thành công!");
+            //            loadDataDefault();
+            //        }
+            //        else
+            //            MessageBox.Show("Xóa tài khoản thất bại!");
+            //    }
+            //}
+            //else
+            //    MessageBox.Show("Vui lòng chọn!");
         }
 
         private void dgv_tk_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgv_tk.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dgv_tk.SelectedRows[0];
-                txt_matk.Text = r.Cells[0].Value.ToString().Trim();
-                txt_tendangnhap.Text = r.Cells[1].Value.ToString().Trim();
-                txt_mk.Text = r.Cells[2].Value.ToString().Trim();
-                cbo_quyen.Text = r.Cells[3].Value.ToString().Trim();
-            }
+
+        }
+
+        private void frm_QLTK_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qL_KH.TAIKHOAN' table. You can move, or remove it, as needed.
+            this.tAIKHOANTableAdapter.Fill(this.qL_KH.TAIKHOAN);
+
         }
     }
 }

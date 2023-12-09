@@ -346,6 +346,8 @@
     <None Include="Resources\growth.png" />
     <None Include="Resources\hotel %281%29.png" />
     <None Include="Resources\hotel %282%29.png" />
+    <None Include="Resources\checked4.png" />
+    <None Include="Resources\hotel %281%291.png" />
     <Content Include="Resources\logo.jpg" />
     <None Include="Resources\plus.png" />
     <None Include="Resources\review.png" />
@@ -353,6 +355,9 @@
     <None Include="Resources\refresh1.png" />
     <None Include="Resources\remove.png" />
     <None Include="Resources\pay.png" />
+    <None Include="Resources\remove1.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\plus1.png" />
     <Content Include="Resources\room-1.jpg" />
     <Content Include="Resources\room-2.jpg" />
     <Content Include="Resources\room-3.jpg" />

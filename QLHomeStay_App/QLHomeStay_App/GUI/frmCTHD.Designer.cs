@@ -42,13 +42,16 @@ namespace QLHomeStay_App.GUI
             this.hOADONTableAdapter = new QLHomeStay_App.QL_KHTableAdapters.HOADONTableAdapter();
             this.tableAdapterManager = new QLHomeStay_App.QL_KHTableAdapters.TableAdapterManager();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btn_sua = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_xoa = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
-            this.cTHDBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
-            this.cbbMaHd = new System.Windows.Forms.ComboBox();
             this.txtTong = new System.Windows.Forms.TextBox();
+            this.cbbMaHd = new System.Windows.Forms.ComboBox();
+            this.cbbMaPhong = new System.Windows.Forms.ComboBox();
+            this.cTHDBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             mAHDLabel1 = new System.Windows.Forms.Label();
             mAKHLabel = new System.Windows.Forms.Label();
             nGAYTAOLabel = new System.Windows.Forms.Label();
@@ -59,16 +62,60 @@ namespace QLHomeStay_App.GUI
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // mAHDLabel1
+            // 
+            mAHDLabel1.AutoSize = true;
+            mAHDLabel1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mAHDLabel1.Location = new System.Drawing.Point(3, 35);
+            mAHDLabel1.Name = "mAHDLabel1";
+            mAHDLabel1.Size = new System.Drawing.Size(60, 21);
+            mAHDLabel1.TabIndex = 0;
+            mAHDLabel1.Text = "Mã HD";
+            // 
+            // mAKHLabel
+            // 
+            mAKHLabel.AutoSize = true;
+            mAKHLabel.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            mAKHLabel.Location = new System.Drawing.Point(3, 73);
+            mAKHLabel.Name = "mAKHLabel";
+            mAKHLabel.Size = new System.Drawing.Size(59, 21);
+            mAKHLabel.TabIndex = 2;
+            mAKHLabel.Text = "Mã DV";
+            // 
+            // nGAYTAOLabel
+            // 
+            nGAYTAOLabel.AutoSize = true;
+            nGAYTAOLabel.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nGAYTAOLabel.Location = new System.Drawing.Point(3, 109);
+            nGAYTAOLabel.Name = "nGAYTAOLabel";
+            nGAYTAOLabel.Size = new System.Drawing.Size(82, 21);
+            nGAYTAOLabel.TabIndex = 4;
+            nGAYTAOLabel.Text = "Mã Phòng";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Location = new System.Drawing.Point(3, 146);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(80, 21);
+            label1.TabIndex = 168;
+            label1.Text = "Tổng tiền";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 195);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(583, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1418, 256);
             this.dataGridView1.TabIndex = 6;
             // 
             // hOADONBindingSource
@@ -85,9 +132,9 @@ namespace QLHomeStay_App.GUI
             // 
             this.cbbMaDV.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
             this.cbbMaDV.FormattingEnabled = true;
-            this.cbbMaDV.Location = new System.Drawing.Point(152, 96);
+            this.cbbMaDV.Location = new System.Drawing.Point(303, 76);
             this.cbbMaDV.Name = "cbbMaDV";
-            this.cbbMaDV.Size = new System.Drawing.Size(125, 24);
+            this.cbbMaDV.Size = new System.Drawing.Size(120, 24);
             this.cbbMaDV.TabIndex = 3;
             // 
             // cTHDTableAdapter
@@ -97,33 +144,6 @@ namespace QLHomeStay_App.GUI
             // hOADONTableAdapter
             // 
             this.hOADONTableAdapter.ClearBeforeFill = true;
-            // 
-            // mAHDLabel1
-            // 
-            mAHDLabel1.AutoSize = true;
-            mAHDLabel1.Location = new System.Drawing.Point(73, 66);
-            mAHDLabel1.Name = "mAHDLabel1";
-            mAHDLabel1.Size = new System.Drawing.Size(48, 17);
-            mAHDLabel1.TabIndex = 0;
-            mAHDLabel1.Text = "Mã HD";
-            // 
-            // mAKHLabel
-            // 
-            mAKHLabel.AutoSize = true;
-            mAKHLabel.Location = new System.Drawing.Point(73, 99);
-            mAKHLabel.Name = "mAKHLabel";
-            mAKHLabel.Size = new System.Drawing.Size(47, 17);
-            mAKHLabel.TabIndex = 2;
-            mAKHLabel.Text = "Mã DV";
-            // 
-            // nGAYTAOLabel
-            // 
-            nGAYTAOLabel.AutoSize = true;
-            nGAYTAOLabel.Location = new System.Drawing.Point(73, 127);
-            nGAYTAOLabel.Name = "nGAYTAOLabel";
-            nGAYTAOLabel.Size = new System.Drawing.Size(69, 17);
-            nGAYTAOLabel.TabIndex = 4;
-            nGAYTAOLabel.Text = "Mã Phòng";
             // 
             // tableAdapterManager
             // 
@@ -145,147 +165,162 @@ namespace QLHomeStay_App.GUI
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.txtTong);
-            this.groupControl1.Controls.Add(label1);
-            this.groupControl1.Controls.Add(this.cbbMaHd);
-            this.groupControl1.Controls.Add(this.cbbMaPhong);
-            this.groupControl1.Controls.Add(this.btn_sua);
-            this.groupControl1.Controls.Add(this.btn_xoa);
-            this.groupControl1.Controls.Add(this.btn_them);
-            this.groupControl1.Controls.Add(this.dataGridView1);
-            this.groupControl1.Controls.Add(mAHDLabel1);
-            this.groupControl1.Controls.Add(mAKHLabel);
-            this.groupControl1.Controls.Add(this.cbbMaDV);
-            this.groupControl1.Controls.Add(nGAYTAOLabel);
-            this.groupControl1.Location = new System.Drawing.Point(83, 47);
+            this.groupControl1.Controls.Add(this.panel1);
+            this.groupControl1.Controls.Add(this.tableLayoutPanel1);
+            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupControl1.Location = new System.Drawing.Point(0, 0);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(655, 480);
+            this.groupControl1.Size = new System.Drawing.Size(1422, 486);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Chi tiết Hóa đơn";
             // 
-            // btn_sua
+            // txtTong
             // 
-            this.btn_sua.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_sua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_sua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_sua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_sua.FillColor = System.Drawing.Color.Transparent;
-            this.btn_sua.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_sua.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_sua.Image = global::QLHomeStay_App.Properties.Resources.refresh;
-            this.btn_sua.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_sua.Location = new System.Drawing.Point(335, 376);
-            this.btn_sua.Name = "btn_sua";
-            this.btn_sua.Size = new System.Drawing.Size(101, 80);
-            this.btn_sua.TabIndex = 163;
-            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
+            this.txtTong.Location = new System.Drawing.Point(303, 112);
+            this.txtTong.Name = "txtTong";
+            this.txtTong.Size = new System.Drawing.Size(120, 23);
+            this.txtTong.TabIndex = 169;
             // 
-            // btn_xoa
+            // cbbMaHd
             // 
-            this.btn_xoa.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_xoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_xoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_xoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_xoa.FillColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_xoa.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_xoa.Image = global::QLHomeStay_App.Properties.Resources.remove;
-            this.btn_xoa.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_xoa.Location = new System.Drawing.Point(176, 376);
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.Size = new System.Drawing.Size(101, 80);
-            this.btn_xoa.TabIndex = 164;
-            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
+            this.cbbMaHd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
+            this.cbbMaHd.FormattingEnabled = true;
+            this.cbbMaHd.Location = new System.Drawing.Point(303, 38);
+            this.cbbMaHd.Name = "cbbMaHd";
+            this.cbbMaHd.Size = new System.Drawing.Size(120, 24);
+            this.cbbMaHd.TabIndex = 167;
             // 
-            // btn_them
+            // cbbMaPhong
             // 
-            this.btn_them.BorderColor = System.Drawing.Color.Transparent;
-            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_them.FillColor = System.Drawing.Color.Transparent;
-            this.btn_them.Font = new System.Drawing.Font("Segoe UI", 24F);
-            this.btn_them.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_them.Image = global::QLHomeStay_App.Properties.Resources.checked3;
-            this.btn_them.ImageSize = new System.Drawing.Size(50, 50);
-            this.btn_them.Location = new System.Drawing.Point(5, 376);
-            this.btn_them.Name = "btn_them";
-            this.btn_them.Size = new System.Drawing.Size(101, 80);
-            this.btn_them.TabIndex = 165;
-            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            this.cbbMaPhong.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
+            this.cbbMaPhong.FormattingEnabled = true;
+            this.cbbMaPhong.Location = new System.Drawing.Point(303, 149);
+            this.cbbMaPhong.Name = "cbbMaPhong";
+            this.cbbMaPhong.Size = new System.Drawing.Size(120, 24);
+            this.cbbMaPhong.TabIndex = 166;
             // 
             // cTHDBindingSource
             // 
             this.cTHDBindingSource.DataMember = "FK_CTHD_HD";
             this.cTHDBindingSource.DataSource = this.hOADONBindingSource;
             // 
-            // cbbMaPhong
+            // tableLayoutPanel1
             // 
-            this.cbbMaPhong.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
-            this.cbbMaPhong.FormattingEnabled = true;
-            this.cbbMaPhong.Location = new System.Drawing.Point(152, 127);
-            this.cbbMaPhong.Name = "cbbMaPhong";
-            this.cbbMaPhong.Size = new System.Drawing.Size(125, 24);
-            this.cbbMaPhong.TabIndex = 166;
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tableLayoutPanel1.ColumnCount = 7;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.18898F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.81102F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 243F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(mAHDLabel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(mAKHLabel, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(nGAYTAOLabel, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(label1, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.cbbMaHd, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbbMaDV, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtTong, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cbbMaPhong, 1, 4);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 28);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.3871F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.6129F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1418, 200);
+            this.tableLayoutPanel1.TabIndex = 170;
             // 
-            // cbbMaHd
+            // panel1
             // 
-            this.cbbMaHd.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.hOADONBindingSource, "MAKH", true));
-            this.cbbMaHd.FormattingEnabled = true;
-            this.cbbMaHd.Location = new System.Drawing.Point(152, 63);
-            this.cbbMaHd.Name = "cbbMaHd";
-            this.cbbMaHd.Size = new System.Drawing.Size(125, 24);
-            this.cbbMaHd.TabIndex = 167;
+            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(2, 228);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1418, 256);
+            this.panel1.TabIndex = 171;
             // 
-            // label1
+            // toolStrip1
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(73, 163);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(66, 17);
-            label1.TabIndex = 168;
-            label1.Text = "Tổng tiền";
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1422, 27);
+            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // txtTong
+            // toolStripButton1
             // 
-            this.txtTong.Location = new System.Drawing.Point(152, 157);
-            this.txtTong.Name = "txtTong";
-            this.txtTong.Size = new System.Drawing.Size(125, 23);
-            this.txtTong.TabIndex = 169;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = global::QLHomeStay_App.Properties.Resources.checked4;
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = global::QLHomeStay_App.Properties.Resources.remove1;
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Click += new System.EventHandler(this.btn_xoa_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = global::QLHomeStay_App.Properties.Resources.refresh2;
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // frmCTHD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 772);
+            this.ClientSize = new System.Drawing.Size(1422, 486);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupControl1);
             this.Name = "frmCTHD";
-            this.Text = "frmCTHD";
+            this.Text = "CHI TIẾT HÓA ĐƠN";
             this.Load += new System.EventHandler(this.frmCTHD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hOADONBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qL_KH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cTHDBindingSource)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Button btn_sua;
-        private Guna.UI2.WinForms.Guna2Button btn_them;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource hOADONBindingSource;
         private QL_KH qL_KH;
         private System.Windows.Forms.ComboBox cbbMaDV;
         private System.Windows.Forms.BindingSource cTHDBindingSource;
-        private Guna.UI2.WinForms.Guna2Button btn_xoa;
         private QL_KHTableAdapters.CTHDTableAdapter cTHDTableAdapter;
         private QL_KHTableAdapters.HOADONTableAdapter hOADONTableAdapter;
         private QL_KHTableAdapters.TableAdapterManager tableAdapterManager;
@@ -293,5 +328,11 @@ namespace QLHomeStay_App.GUI
         private System.Windows.Forms.ComboBox cbbMaHd;
         private System.Windows.Forms.ComboBox cbbMaPhong;
         private System.Windows.Forms.TextBox txtTong;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }

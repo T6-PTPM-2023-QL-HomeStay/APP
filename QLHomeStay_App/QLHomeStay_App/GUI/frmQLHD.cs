@@ -32,7 +32,7 @@ namespace QLHomeStay_App.GUI
 
         private void frmQLHD_Load(object sender, EventArgs e)
         {
-           dataGridView1.DataSource= hd.GetHOADONs();
+           //dataGridView1.DataSource= hd.GetHOADONs();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace QLHomeStay_App.GUI
                     if (hd.insertHD(int.Parse(mAHDSpinEdit1.Text), mAKHComboBox.SelectedItem.ToString(), DateTime.Parse(nGAYTAODateEdit.Text)))
                     {
                         MessageBox.Show("Thêm thành công!");
-                        dataGridView1.DataSource = hd.GetHOADONs();
+                        //dataGridView1.DataSource = hd.GetHOADONs();
                         
                         
                     }
@@ -71,7 +71,7 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Xóa thành công!");
                 else
                     MessageBox.Show("Xóa thất bại!");
-                dataGridView1.DataSource = hd.GetHOADONs();
+                //dataGridView1.DataSource = hd.GetHOADONs();
             }
         }
 
@@ -85,26 +85,41 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Sửa thành công!");
                 else
                     MessageBox.Show("Sửa thất bại!");
-                dataGridView1.DataSource = hd.GetHOADONs();
+               // dataGridView1.DataSource = hd.GetHOADONs();
             }
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dataGridView1.SelectedRows[0];
-                mAHDSpinEdit1.Text = r.Cells[0].Value.ToString().Trim();
-                mAKHComboBox.Text = r.Cells[1].Value.ToString().Trim();
-                nGAYTAODateEdit.Text = r.Cells[2].Value.ToString().Trim();
-              //  cbo_quyen.Text = r.Cells[3].Value.ToString().Trim();
-            }
+            //if (//dataGridView1.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = //dataGridView1.SelectedRows[0];
+            //    mAHDSpinEdit1.Text = r.Cells[0].Value.ToString().Trim();
+            //    mAKHComboBox.Text = r.Cells[1].Value.ToString().Trim();
+            //    nGAYTAODateEdit.Text = r.Cells[2].Value.ToString().Trim();
+            //  //  cbo_quyen.Text = r.Cells[3].Value.ToString().Trim();
+            //}
         }
 
         private void btn_CTHD_Click(object sender, EventArgs e)
         {
             frmCTHD t = new frmCTHD();
             t.Show();
+        }
+
+        private void btn_CTHD_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_them_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 

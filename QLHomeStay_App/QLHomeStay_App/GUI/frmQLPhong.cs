@@ -16,7 +16,7 @@ namespace QLHomeStay_App.GUI
         public frmQLPhong()
         {
             InitializeComponent();
-            dataGridView1.DataSource = phong.getAllPhong();
+            //dataGridView1.DataSource = phong.getAllPhong();
             cbo_loai.DataSource = l.getTenLP();
             cbo_khu.DataSource = KHU.getMaKhu();
             cbo_loai.SelectedItem = 0;
@@ -43,17 +43,17 @@ namespace QLHomeStay_App.GUI
         
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
-            {
-                DataGridViewRow r = dataGridView1.SelectedRows[0];
-                txt_maphong.Text = r.Cells[0].Value.ToString();
-                cbo_loai.Text = r.Cells[1].Value.ToString();
-                cbo_khu.Text = r.Cells[2].Value.ToString();
-                txt_tenphong.Text = r.Cells[3].Value.ToString();
-                txt_soluong.Text = r.Cells[4].Value.ToString();
-                cbbtrangThai.Text = r.Cells[5].Value.ToString();
+            //if (dataGridView1.SelectedRows.Count > 0)
+            //{
+            //    DataGridViewRow r = dataGridView1.SelectedRows[0];
+            //    txt_maphong.Text = r.Cells[0].Value.ToString();
+            //    cbo_loai.Text = r.Cells[1].Value.ToString();
+            //    cbo_khu.Text = r.Cells[2].Value.ToString();
+            //    txt_tenphong.Text = r.Cells[3].Value.ToString();
+            //    txt_soluong.Text = r.Cells[4].Value.ToString();
+            //    cbbtrangThai.Text = r.Cells[5].Value.ToString();
 
-            }
+            //}
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Nhận phòng thành công!");
                 else
                     MessageBox.Show("Nhận phòng thất bại!");
-                dataGridView1.DataSource = phong.getAllPhong();
+               // dataGridView1.DataSource = phong.getAllPhong();
             }
         }
 
@@ -80,14 +80,21 @@ namespace QLHomeStay_App.GUI
                     MessageBox.Show("Trả phòng thành công!");
                 else
                     MessageBox.Show("Trả phòng thất bại!");
-                dataGridView1.DataSource = phong.getAllPhong();
+               // dataGridView1.DataSource = phong.getAllPhong();
             }
 
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = phong.getAllPhong();
+            //dataGridView1.DataSource = phong.getAllPhong();
+        }
+
+        private void frmQLPhong_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'qL_KH.PHONG' table. You can move, or remove it, as needed.
+            this.pHONGTableAdapter.Fill(this.qL_KH.PHONG);
+
         }
     }
 }
